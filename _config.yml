@@ -24,15 +24,15 @@ exclude: ["Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
 # Theme settings
 # remote_theme: pmarsceill/just-the-docs@v0.3.3
 # theme: "just-the-docs"
-# color_scheme: light
-# search_enabled: true
-# heading_anchors: true
-# permalink: pretty
-# aux_links:
-#   Kevin Lin:
-#     - 'https://kevinl.info'
-#   Just the Class on GitHub:
-#     - 'https://github.com/kevinlin1/just-the-class'
+color_scheme: light
+search_enabled: true
+heading_anchors: true
+permalink: pretty
+aux_links:
+  Matthew Ballard:
+    - 'https://www.matthewrobertballard.com'
+  Microsoft Teams:
+    - 'https://teams.microsoft.com/l/channel/19%3aJgLzdLZpFCbmrJptHxrA2E7bvjwXsxJFPmFdJmn1-CI1%40thread.tacv2/General?groupId=5ff176b0-5dbd-44cb-a436-ec0c668e897e&tenantId=4b2a4b19-d135-420e-8bb2-b1cd238998cc'
 # footer_content:
 
 # Collections for website data
