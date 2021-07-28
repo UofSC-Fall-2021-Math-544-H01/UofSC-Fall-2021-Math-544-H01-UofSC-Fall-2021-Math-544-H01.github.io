@@ -1,10 +1,10 @@
 ---
 layout: home
-title: Just the Class
+title: Linear Algebra
 nav_exclude: true
 seo:
   type: Course
-  name: Just the Class
+  name: Linear Algebra
 ---
 
 # {{ site.tagline }}
