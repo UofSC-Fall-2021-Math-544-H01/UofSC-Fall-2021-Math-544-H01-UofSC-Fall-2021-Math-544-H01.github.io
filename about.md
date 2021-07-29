@@ -5,7 +5,7 @@ description: >-
     Course syllabus, policies, and information.
 ---
 
-# About
+# Syllabus
 {:.no_toc}
 
 <!-- ## Table of contents
@@ -85,7 +85,7 @@ After successful completion of this course, you will be able to:
 
 ## Course Materials 
 
-The main resources for materials is the [course website](https://544.f21.matthewrobertballard.com) and the [Microsoft Team](https://teams.microsoft.com/l/channel/19%3aJgLzdLZpFCbmrJptHxrA2E7bvjwXsxJFPmFdJmn1-CI1%40thread.tacv2/General?groupId=5ff176b0-5dbd-44cb-a436-ec0c668e897e&tenantId=4b2a4b19-d135-420e-8bb2-b1cd238998cc) for the course. 
+The main resources for materials are the [course website](https://544.f21.matthewrobertballard.com) and the [Microsoft Team](https://teams.microsoft.com/l/channel/19%3aJgLzdLZpFCbmrJptHxrA2E7bvjwXsxJFPmFdJmn1-CI1%40thread.tacv2/General?groupId=5ff176b0-5dbd-44cb-a436-ec0c668e897e&tenantId=4b2a4b19-d135-420e-8bb2-b1cd238998cc) for the course. 
 
 Some supplemental (and optional) resources:
 - K. Kuttler. [A first course in linear algebra](https://www.oercommons.org/courses/first-course-linear-algebra/view) (Open Access)
@@ -102,9 +102,9 @@ To wholly and successfully engage with the course, you will need to be need to [
 
 It is expected that much of this material will be unfamiliar to you. (If not, more power to you.) The course is structured to guide every student to mastery in terms of conceptual understanding and computational fidelity by the end of the semester.
 
-The walking phase consists of the first eleven weeks. During this period, I will be actively guiding the class time and doing the majority of the speaking. You will become accustomed to the new ideas through my demonstrations. During this period you will sharpen your knowledge and skills through weekly homework assignments.  
+After the first class, class time will be spent working in small groups and presenting solutions to problems. It is expected you will have consumed the relevant material ahead of each course. It is not expected you will be comfortable with the material. Class time is for learning by doing. 
 
-The running phase consists of a flipped classroom. Before the start of this period, I will provide a script: a collection of worksheets which develop the basic mathematical theory of groups with all proofs left blank. You will provide the proofs and then present some of your proofs to the class.  
+Each class will end with a short quiz to diagnose any problems. 
 
 At the end of the class, a project will be due in place of a final exam.  
 
@@ -118,7 +118,7 @@ If you are having trouble with this course or its material, you should contact m
 
 Announcements will be posted to this course whenever necessary. If there is any other information I think is important, I will send it to your preferred university email address. It is your responsibility to ensure that your email account works properly in order to receive email. 
 
-If you are unsure of your preferred email, check your account (myaccount.sc.edu). For more information on setting your preferred university email, please see the How To Change Your Primary University Email Address (https://scprod.service-now.com/sp?id=kb_article_view&sysparm_article=KB0011464) Knowledge Base article. 
+If you are unsure of your preferred email, check your account at [myaccount.sc.edu](https://myaccount.sc.edu). For more information on setting your preferred university email, please see the Knowledge Base Article [How To Change Your Primary University Email Address](https://scprod.service-now.com/sp?id=kb_article_view&sysparm_article=KB0011464). 
 
 ## Technology 
 
@@ -171,46 +171,45 @@ If you have problems with your computer, technology, IT-related questions, suppo
 
 ## Homework	 
 
-Homework will need to be completed in groups of 3-4 that will be randomly assigned each week. The assignments will be available in and must be returned through Microsoft Teams. All homework assignments are due by 11:59 pm (Eastern Time) on the day indicated on the course schedule. Homework will be graded for correctness. 
+Homework will need to be completed in groups of 3-4 that will be randomly assigned each week. The assignments will be available in and must be returned through Microsoft Teams. All homework assignments are due by 11:59 pm (Eastern Time) on the day indicated on the course schedule. Homework will be graded for correctness. You will be allowed up to two revisions on each homework assignment. 
 
-## Worksheets 
+## Quizzes 
 
-The worksheets will be due before the start of class as indicated on the course schedule. Worksheets will be checked only for completion.  
+Each course will end with a short quiz. The goal of the quiz is to diagnose any gaps in the understanding and make sure we all stay on the same page. Quizzes are graded for correctness. You will be allowed up to two revisions on each quiz. 
 
 ## Presentations 
 
-During the running phase of the course, you will be called on at random to present a proof. It is perfectly fine to pass if called, but you are expected to present at least two proofs from the worksheets over the running phase. No one is expecting the presented proofs to be complete and correct. Indeed, the best learning will occur in sorting out details together. Your presentation will be graded only on completion. 
+All students are expected to regularly present solutions to in-class work group problems. Your target should be to present one solution every two weeks. Presentations are graded simply for completion. If you attempt it, it counts. 
 
 ## Project 
 
-A list of project topics will be released on October 1. These can be done in groups of 1-4 of your own choosing. Projects are due by December 11 at 12:00 pm (EST).   
+A list of project topics will be released on October 1. These can be done in groups of 1-4 of your own choosing. Projects are due by December 9 at 9:00 am (EST). 
 
 ## Evaluation and Grading Scale 
 
-All grades will be posted on Teams. You are strongly encouraged to check you scores in Teams regularly. A final letter grade will be assigned based on percentages. 
+All grades will be posted on Teams. You are strongly encouraged to check you scores in Teams regularly. A final letter grade will be assigned based on weighting below. 
 
 ### Assignment Weights 
 
-| Component     | Percent        |
+| Component     | Percent of total      |
 | :---------:   | :---------:    |
 | Homework      |      25%       |
-| Worksheets    |      25%       |
+| Quizzes       |      25%       |
 | Presentations |      25%       |
 | Project       |      25%       |
 
-
 ### Grading Scale 
 
-| Range     | Letter    |
+| Final total intervals   | Letter  Grade  |
 | :-------: | :-----:   |
-| 90-100%   | A         | 
-| 85-90%    | B+        | 
-| 80-85%    | B         | 
-| 75-80%    | C+        | 
-| 70-75%    | C         | 
-| 65-70%    | D+        | 
-| 60-60%    | D         | 
-| 0-60%     | F         | 
+| [90,100]   | A         | 
+| [85,90)    | B+        | 
+| [80,85)    | B         | 
+| [75,80)    | C+        | 
+| [70,75)    | C         | 
+| [65,70)   | D+        | 
+| [60,60)    | D         | 
+| [0,60)     | F         | 
 
 ## Assignment Submission 
 
@@ -218,21 +217,23 @@ All written assignments are required to be submitted through Teams. Unless other
 
 - the handwriting must be clear and legible – otherwise you will receive no credit 
 
-- you will need to use the Office 365 Lens app to scan and upload you work to your university OneDrive account before attaching to the assignment. No HEIC extensions are allowed.  
+- you will need to use the Office 365 Lens app to scan and upload you work to your university OneDrive account before attaching to the assignment. No HEIC extensions are allowed.    
 
-- All homework turned in on-time is eligible for revision at full credit. Each assignment can undergo at most two revisions. Revisions must be resubmitted within one week of receiving a marked assignment or revision.  
+## Revisions 
+
+All homework turned in on-time is eligible for revision at full credit. All quizzes taken on-time are eligible for revision at full credit. Each assignment can undergo at most two revisions. Revisions must be resubmitted within one week of receiving a marked assignment or revision.
 
 # Academic Success 
 
 ## Accessibility 
 
-[Student Disability Resource Center](http://www.sa.sc.edu/sds/): The Student Disability Resource Center (SDRC) empowers students to manage challenges and limitations imposed by disabilities. Students with disabilities are encouraged to contact me to discuss the logistics of any accommodations needed to fulfill course requirements (within the first week of the semester). In order to receive reasonable accommodations from me, you must be registered with the Student Disability Resource Center (1523 Greene Street, LeConte Room 112A, Columbia, SC 29208, 803-777-6142). Any student with a documented disability should contact the SDRC to make arrangements for appropriate accommodations. 
+The [Student Disability Resource Center](http://www.sa.sc.edu/sds/) (SDRC) empowers students to manage challenges and limitations imposed by disabilities. Students with disabilities are encouraged to contact me to discuss the logistics of any accommodations needed to fulfill course requirements (within the first week of the semester). In order to receive reasonable accommodations from me, you must be registered with the Student Disability Resource Center (1705 College Street Close-Hipp, Suite 102 Columbia, SC 29208, 803-777-6142). Any student with a documented disability should contact the SDRC to make arrangements for appropriate accommodations. 
 
 ## Student Success Center 
 
-In partnership with USC faculty, the Student Success Center (SSC) offers a number of programs to assist you in better understanding your course material and to aid you on your path to success. SSC programs are facilitated by professional staff, graduate students, and trained undergraduate peer leaders who have previously excelled in their courses. Resources available to you in this and other courses may include: 
+In partnership with USC faculty, the [Student Success Center](https://www.sc.edu/success) (SSC) offers a number of programs to assist you in better understanding your course material and to aid you on your path to success. SSC programs are facilitated by professional staff, graduate students, and trained undergraduate peer leaders who have previously excelled in their courses. Resources available to you in this and other courses may include: 
 
-Peer Tutoring: You can make a one-on-one appointment with a [Peer Tutor](www.sc.edu/success).  Drop-in Tutoring and Online Tutoring may also be available for this course. Visit their website for a full schedule of times, locations, and courses. In the past, they have tutored in Math 300.  
+Peer Tutoring: You can make a one-on-one appointment with a [Peer Tutor](https://www.sc.edu/success). Drop-in Tutoring and Online Tutoring may also be available for this course. Visit their website for a full schedule of times, locations, and courses.  
 
 <!-- Supplemental Instruction (SI): SI Leaders are assigned to specific sections of courses and hold three weekly study sessions. Sessions focus on the most difficult content being covered in class. The SI Session schedule is posted through the SSC website each week and will also be communicated in class by the SI Leader. There is no SI for Math 300 but this might be useful for your other classes.   -->
 
@@ -240,7 +241,7 @@ Peer Writing: Improve your college-level writing skills by bringing writing assi
 
 Success Consultations: In Success Consultations, SSC staff assist you in developing study skills, setting goals, and connecting to a variety of campus resources. Throughout the semester, I may communicate with the SSC via Success Connect, an online referral system, regarding your progress in the course. If contacted by the SSC, please schedule a Success Consultation. Success Connect referrals are not punitive and any information shared by me is confidential and subject to FERPA regulations. 
 
-SSC services are offered to all USC undergraduates at no additional cost. You are invited to call the Student Success Hotline at (803) 777-1000, visit [SSC website](www.sc.edu/success), or stop by the SSC in the Thomas Cooper Library on the Mezzanine Level to check schedules and make appointments. 
+SSC services are offered to all USC undergraduates at no additional cost. You are invited to call the Student Success Hotline at (803) 777-1000, visit [SSC website](https://www.sc.edu/success), or stop by the SSC in the Thomas Cooper Library on the Mezzanine Level to check schedules and make appointments. 
 
 ## Writing Center 
 
