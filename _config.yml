@@ -20,11 +20,12 @@ author: Matthew Ballard
 baseurl: '' # the subpath of your site, e.g. /blog
 url: 'https://544.matthewerobertballard.com' # the base hostname & protocol for your site, e.g. http://example.com
 exclude: ["Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
+# logo: '/assets/images/beta.png'
 
 # Theme settings
 # remote_theme: pmarsceill/just-the-docs@v0.3.3
 # theme: "just-the-docs"
-color_scheme: light
+color_scheme: usc
 search_enabled: true
 heading_anchors: true
 permalink: pretty
@@ -33,7 +34,7 @@ aux_links:
     - 'https://www.matthewrobertballard.com'
   Microsoft Teams:
     - 'https://teams.microsoft.com/l/channel/19%3aJgLzdLZpFCbmrJptHxrA2E7bvjwXsxJFPmFdJmn1-CI1%40thread.tacv2/General?groupId=5ff176b0-5dbd-44cb-a436-ec0c668e897e&tenantId=4b2a4b19-d135-420e-8bb2-b1cd238998cc'
-# footer_content:
+footer_content: 'Copyright &copy; 2021 Matthew Ballard. Distributed by an <a href="https://github.com/UofSC-Fall-2021-Math-544-H01-UofSC-Fall-2021-Math-544-H01.github.io/tree/master/LICENSE.txt\">MIT license.</a>'
 
 # Collections for website data
 collections:
@@ -73,5 +74,9 @@ compress_html:
   blanklines: false
   profile: false
 
+kramdown:
+  math_engine: nil
+
 plugins:
   - jekyll-seo-tag
+#  - jekyll-katex

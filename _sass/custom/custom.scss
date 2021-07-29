@@ -38,9 +38,9 @@ div.highlighter-rouge[overlay] {
   }
 }
 
-details {
-  margin: 0 40px 1em;
-}
+// details {
+//   margin: 0 40px 1em;
+// }
 
 h1, h2, h3, h4, h5, h6 {
   align-items: center;
@@ -52,9 +52,9 @@ summary {
   max-width: 100%;
 }
 
-summary {
-  @extend .btn, .btn-outline;
-}
+// summary {
+//   @extend .btn, .btn-outline;
+// }
 
 .main-content-wrap {
   max-width: $content-width;
@@ -89,9 +89,9 @@ summary {
     }
   }
 
-  .katex {
-    font-size: 1.1em;
-  }
+  // .katex {
+  //   font-size: 1.1em;
+  // }
 }
 
 [style*="--aspect-ratio"] > :first-child {
