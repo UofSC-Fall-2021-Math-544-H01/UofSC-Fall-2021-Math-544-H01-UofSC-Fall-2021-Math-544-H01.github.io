@@ -18,7 +18,7 @@ tagline: Fall 2021 Math 544 at UofSC
 description: In this course, we explore transformations that take lines to other lines. It is suprisingly well-structured setting with applications all over the place
 author: Matthew Ballard
 baseurl: '' # the subpath of your site, e.g. /blog
-url: 'https://544.matthewerobertballard.com' # the base hostname & protocol for your site, e.g. http://example.com
+url: 'https://544.f21.matthewerobertballard.com' # the base hostname & protocol for your site, e.g. http://example.com
 exclude: ["Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
 # logo: '/assets/images/beta.png'
 
