@@ -64,7 +64,7 @@ The most direct attack would perhaps be to repeatedly substitute and simplify to
 
 In this class, we study the structure of linear equations from both very concrete and mildly abstract perspectives. We will develop tools that allow us to both gain a conceptual understanding of systems of linear equations and underpin robust computational tools. 
 
-We will pay particular attention to linear algebra constructions that appear in quantum computing. Our pen, paper, and mental work will be supplemented with a working knowledge of [Sage](https://www.sagemath.org/). 
+Our pen, paper, and mental work will be supplemented with a working knowledge of [Sage](https://www.sagemath.org/). 
  
 ## Prerequisites 
 
@@ -146,7 +146,7 @@ To participate in learning activities and complete assignments, you will need:
 
     - Note that you might benefit from installing the Microsoft Teams app on your smartphone. Search for ‘Microsoft Teams’ in the Android or iOS app store and install.  
 
-- We will be using a computer algera system called [Sage](https://www.sagemath.org/) to aid our learning. It is a computer-algebra system ideally suited to students of mathematics, and all other STEM fields, vastly more sophisticated and advanced than any graphing calculator. Moreover, Sage is based on the popular programming language Python. That means if you use Sage in a mathematics, statistics, physics, or data-science class, you will learn Python along the way. There are three main ways to access Sage: 
+- We will be using a computer algebra system called [Sage](https://www.sagemath.org/) to aid our learning. It blows your graphing calculator out of the water and is ideally suited to STEM work. Built as a super-set of the popular programming language [Python](https://www.python.org/), Sage skills will translate into Python skills. There are three main ways to access Sage: 
     - [SageMathCell](https://sagecell.sagemath.org/) is ideal for a computation involving a few lines. 
     - [CoCalc](https://www.cocalc.com/) provides a free plan for more complicted porgrams. 
     - [A local installation](http://doc.sagemath.org/html/en/installation/binary.html) will never be required of anyone. But, it might be valuable for a power-user. 
@@ -245,7 +245,7 @@ SSC services are offered to all USC undergraduates at no additional cost. You ar
 
 ## Writing Center 
 
-[Writing Center](http://artsandsciences.sc.edu/write/university-writing-center) This course has many of writing assignments. The University Writing Center is an important resource you should use! It's open to help any USC student needing assistance with a writing project at any stage of development. The main Writing Center is in Byrnes 703. 
+This course has many of writing assignments. The [University Writing Center](http://artsandsciences.sc.edu/write/university-writing-center) is an important resource you should use! It's open to help any USC student needing assistance with a writing project at any stage of development. The main Writing Center is in Byrnes 703. 
 
 ## University Library Resources 
 
@@ -255,13 +255,11 @@ Remember that if you use anything that is not your own writing or media (quotes 
 
 ## Teams and Technology 
 
-[Teams and Technology](https://sc.edu/about/offices_and_divisions/division_of_information_technology/end_user_services/available_technology_resources/) 
-
-As a student in this course, you have access to support from the Division of Information Technology (DoIT) for Teams and computer issues. The service desk can be reached at 803-777-1800. 
+[Teams and Technology](https://sc.edu/about/offices_and_divisions/division_of_information_technology/end_user_services/available_technology_resources/). As a student in this course, you have access to support from the Division of Information Technology (DoIT) for Teams and computer issues. The service desk can be reached at 803-777-1800. 
 
 ## Counseling Services 
 
-[Counseling Services](https://sc.edu/about/offices_and_divisions/student_health_services/medical-services/counseling-and-psychiatry/index.php): The University offers counseling and crisis services as well as outreach services, self-help, and frequently asked questions. 
+The University offers [counseling and crisis services](https://sc.edu/about/offices_and_divisions/student_health_services/medical-services/counseling-and-psychiatry/index.php) as well as outreach services and self-help. 
 
 # Course Policies and Procedures 
 
@@ -357,9 +355,73 @@ I am expected to facilitate learning, answer questions appropriately, be fair an
 
 ## Copyright/Fair Use Statement 
 
-I will cite and/or reference any materials that I use in this course that I do not create.  You, as students, are expected to not distribute any of these materials, resources, quizzes, tests, homework assignments, etc. (whether graded or ungraded). 
+I will cite and/or reference any materials that I use in this course that I do not create. 
+
+Anything that appears on this website is copyright &copy; 2021 Matthew Ballard and is distributed by an <a href="https://github.com/UofSC-Fall-2021-Math-544-H01-UofSC-Fall-2021-Math-544-H01.github.io/tree/master/LICENSE.txt\">MIT license.
+
+Course materials that do not appear on this website are copyright &copy; 2021 Matthew Ballard and all rights are reserved. In particular, you may not distribute any of these course materials in any fashion. 
 
 # Tentative Schedule 
 
-## Week 1.   
-8/21 Pre-reading: None. Topics: Tech check and introductions.
+This is the (ambitious) plan for the semester. But it is only a plan. The successful progression of each student is the most important guide to through the material. As such, you should expect revisions as we go. 
+
+## Week 1
+- 8/19 addition and multiplication of matrices and vectors
+
+## Week 2
+- 8/24 solving linear systems: row reduction 
+- 8/26 row echelon form and LU decompositions  
+
+## Week 3
+- 8/31 geometry and solvability of linear systems 
+- 9/2 ranges and null spaces of matrices - implicit and parametric representations
+
+## Week 4
+- 9/7 linear dependence and spans of collections of vectors - dimensions and bases
+- 9/9 row rank, column rank
+
+## Week 5
+- 9/14 invertibility 
+- 9/16 vector spaces 
+
+## Week 6
+- 9/21 subspaces
+- 9/23 bases again
+
+## Week 7
+- 9/28 linear transformations
+- 9/30 kernels and images 
+
+## Week 8
+- 10/5 isomorphisms
+
+## Week 9
+- 10/12 determinants: the idea
+- 10/14 determinants: computations
+
+## Week 10
+- 10/19 the complex number system
+- 10/21 eigenvalues and eigenvectors 1
+
+## Week 11
+- 10/26 eigenvalues and eigenvectors 2
+- 10/28 symmetric matrices
+
+## Week 12
+- 11/2 positive definite matrices 
+- 11/4 diagonalizability
+
+## Week 13
+- 11/9 diagonalizability 2
+- 11/11 orthogonality and projections
+
+## Week 14
+- 11/16 least squares approximations
+- 11/18 gram-schmidt and QR factorization
+
+## Week 15
+- 11/23 singular value decomposition
+
+## Week 16 
+- 11/30 selected applications
+- 12/2 selected applications 
