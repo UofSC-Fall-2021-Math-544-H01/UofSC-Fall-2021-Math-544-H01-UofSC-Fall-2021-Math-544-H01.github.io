@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Linear Systems
+title: Linear Equations
 nav_order: 1
 has_children: false
 has_toc: false
@@ -96,41 +96,27 @@ This situation may seem contrived. Often in mathematics, a general understanding
 understanding the edge cases of a problem. Linear algebra is no different. Encountering $$0 = 1$$ will 
 be a natural possibility once we have developed enough tools. 
 
-Before we turn to systems of linear equations, let's recap one important point: 
+Before we turn to systems of linear equations, let's recap some important points: 
 
 --------
 
-### Observation:
+### Algorithm for solving a linear equation:
+We can write the algorithm for solving $a_1x_1 + \cdots + a_mx_m = b$ described above in pseudo-code. 
+```
+if all a_i == 0 and b != 0:
+    return No Solution
+else if all a_i == 0 and b == 0:
+    return [x_1,...,x_m]
+else:
+    pick i with a_i != 0 
+    set x_i = (a_1/a_i)*x_1-...-(a_{i-1}/a_i)*x_{i-1} - (a_{i+1}/a_i)*x_{i+1} - ... -(a_m/a_1)*x_m
+    return [x_1,...,x_m]
+```
+
+### Dichotomy of solutions:
 For a linear equation, $a_1x_1 + \cdots a_mx_m = b$, we have three possibilities 
-- there can be infinitely-many solutions if $m > 1$ and either not all $a_i$ are $0$ or $b = 0$, 
-- there can be a unique solution if $m = 1$ and either not all $a_i$ are $0$ or $b = 0$ (e.g. $x = 1$), or
-- there can be no solutions at all if all $a_i$ are $0$ and $b \neq 0$. 
+- there can be infinitely-many solutions (if $m > 1$ and either not all $a_i$ are $0$ or $b = 0$), 
+- there can be a unique solution (if $m = 1$ and either not all $a_i$ are $0$ or $b = 0$), or
+- there can be no solutions at all (if all $a_i$ are $0$ and $b \neq 0$). 
 
---------
-
-## Systems of linear equations 
-
-With our knowledge of linear equations, the notion of a system is pretty quick to state. A *system of 
-linear equations in the variables $x_1,\ldots,x_m$* is a (finite) set of linear equations in $x_i$'s. Let us 
-use $n$ to denote the number of equations we have. Then, we are saying that, for any $1 \leq i \leq n$ and 
-$1 \leq j \leq m$, there are $a_{ij}$ and $b_i$ and equations 
-
-$$
-    a_{11} x_1 + a_{12}x_2 + \cdots a_{1m} x_m = b_1 \\
-    a_{21} x_1 + a_{22}x_2 + \cdots a_{2m} x_m = b_2 \\
-    \vdots \\
-    a_{n1} x_1 + a_{n2}x_2 + \cdots a_{nm} x_m = b_n \\
-$$
-
-We need two indices now: one to account for the number of equations and another for the number of unknowns. 
-
-We were already introduced to an example
-$$ 
- 0 = \frac{1}{4} x - \frac{1}{3} y \\
- {} \\
- 0 = - \frac{1}{2} x + \frac{1}{3} y
-$$
-
-In this case $n = m = 2$. For a system where $n = m$, we will call it *square*. 
-
-We can generalize our method for computing solutions to 
+We will see this dichotomy continues to hold for [systems of linear equations]({% link notes/solving_linear_systems/systems.md %}). 
