@@ -23,21 +23,21 @@ schedule:
     - name: Class
       start: 8:30 AM
       end: 9:45 AM
-      location: COC 3007
+      location: COL 3007
     - name: Office Hours
       start: 11:30 AM
       end: 1:00 PM
-      location: COC 1033B
+      location: COL 1022C
   - name: Wednesday
   - name: Thursday
     events:
     - name: Class
       start: 8:30 AM
       end: 9:45 AM
-      location: COC 3007
+      location: COL 3007
     - name: Office Hours
       start: 11:30 AM
       end: 1:00 PM
-      location: COC 1033B
+      location: COL 1022C
   - name: Friday
 ---

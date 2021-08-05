@@ -2,6 +2,7 @@
 layout: page
 title: This Website
 description: Information on resources used to construct our website. 
+nav_exclude: true
 ---
 
 ## About this website

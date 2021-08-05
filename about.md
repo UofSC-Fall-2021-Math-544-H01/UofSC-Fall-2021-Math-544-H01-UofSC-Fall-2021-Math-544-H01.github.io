@@ -40,7 +40,7 @@ Tuesdays and Thursdays 8:30-9:45 AM in Room 3007 of the [Carolina Coliseum](http
 
 - Instructor Name and Preferred Title: [Prof. Matthew (Matt) Ballard](staff.md)
 - Preferred pronouns: He/Him/His
-- Office : [Carolina Coliseum](https://sc.edu/visit/map/?id=744#!m/223299) Room 1033B 
+- Office : [Carolina Coliseum](https://sc.edu/visit/map/?id=744#!m/223299) Room 1022C 
 - E-mail: [ballard@math.sc.edu](mailto:ballard@math.sc.edu)
 
 ## Office Hours
@@ -102,7 +102,8 @@ To wholly and successfully engage with the course, you will need to be need to [
 
 It is expected that much of this material will be unfamiliar to you. (If not, more power to you.) The course is structured to guide every student to mastery in terms of conceptual understanding and computational fidelity by the end of the semester.
 
-After the first class, class time will be spent working in small groups and presenting solutions to problems. It is expected you will have consumed the relevant material ahead of each course. It is not expected you will be comfortable with the material. Class time is for learning by doing. 
+Class time will be spent working in small groups and presenting solutions to problems. It is expected you will have consumed the relevant material ahead of each course. It is not expected you will be comfortable with the material. Class time is for learning through doing and working through your 
+misunderstandings. 
 
 Each class will end with a short quiz to diagnose any problems. 
 

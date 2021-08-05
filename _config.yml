@@ -34,7 +34,7 @@ aux_links:
     - 'https://www.matthewrobertballard.com'
   Microsoft Teams:
     - 'https://teams.microsoft.com/l/channel/19%3aJgLzdLZpFCbmrJptHxrA2E7bvjwXsxJFPmFdJmn1-CI1%40thread.tacv2/General?groupId=5ff176b0-5dbd-44cb-a436-ec0c668e897e&tenantId=4b2a4b19-d135-420e-8bb2-b1cd238998cc'
-footer_content: 'Copyright &copy; 2021 Matthew Ballard. Distributed with an <a href="https://github.com/UofSC-Fall-2021-Math-544-H01-UofSC-Fall-2021-Math-544-H01.github.io/tree/master/LICENSE.txt\">MIT license.</a>'
+footer_content: '<a href="https://544.f21.matthewrobertballard.com/about_this_webpage/">About this webpage.</a> Copyright &copy; 2021 Matthew Ballard. Distributed with an <a href="https://github.com/UofSC-Fall-2021-Math-544-H01-UofSC-Fall-2021-Math-544-H01.github.io/tree/master/LICENSE.txt\">MIT license.</a> '
 
 # Collections for website data
 collections:
