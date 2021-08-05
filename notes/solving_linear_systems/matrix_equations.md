@@ -63,3 +63,7 @@ $$
     a_{n1} & a_{n2} & \cdots & a_{nm} &\bigg| & b_n 
 \end{pmatrix}
 $$
+
+Our next task is to understand how we can enhance our understanding of solutions of linear systems 
+by using matrices. We will study which [operations]({% link notes/solving_linear_systems/row_operations.md %}) on (augmented) matrices can simplify the 
+matrix without losing information about the solution set of the linear system. 

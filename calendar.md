@@ -6,6 +6,6 @@ description: Listing of course modules and topics.
 
 # Calendar
 
-{% for module in site.modules %}
+{% for module in site.modules reversed %}
 {{ module }}
 {% endfor %}
