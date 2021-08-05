@@ -4,6 +4,7 @@ title: Solving Linear Systems
 nav_order: 1
 has_children: true
 parent: Notes
+reading_estimate: true
 ---
 
 ## A motivating example

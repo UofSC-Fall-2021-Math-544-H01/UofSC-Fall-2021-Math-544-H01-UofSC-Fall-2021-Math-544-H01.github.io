@@ -44,6 +44,8 @@ collections:
   announcements:
   citables: 
     output: true
+  homework:
+  worksheet: 
 # Default layouts for each collection type
 defaults:
   - scope:
@@ -72,6 +74,16 @@ defaults:
       type: citables
     values:
       layout: citable
+  - scope:
+      path: ''
+      type: homework
+    values:
+      layout: page 
+  - scope:
+      path: ''
+      type: worksheets
+    values:
+      layout: page
 
 compress_html:
   clippings: all
