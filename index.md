@@ -30,6 +30,18 @@ for each class along with the pre-reading.
 
 The [notes tab]({% link notes/intro.md %}) is where you can find the course reading. 
 
+## Homework and Worksheets
+
+There are tabs for class [homework]({% link homework/index.md %}) and 
+[worksheets]({% link worksheets/index.md %}). 
+
+Homework is turned in weekly and in groups of 3-4. 
+
+Worksheets are what we work in during class, also in groups. Worksheets are not 
+turned in - you are only graded on how much you present solutions to them. 
+
+For more information, see the [Syllabus]({% link about.md %}).
+
 ## Weekly schedule 
 
 If you ever need to remind yourself about the time and coordinates of our course or 

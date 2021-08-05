@@ -17,11 +17,14 @@ Aug 24
   : 
 : Pre-readings: coming by 8/17
 <!-- [matrix equations]({% link notes/solving_linear_systems/matrix_equations.md %}) -->
+: Class worksheet: coming by 8/17
 
 Aug 26 
 : Reduced row echelon form 
   : 
 : Pre-readings: coming by 8/19
+: Class worksheet: comeing by 8/19
+: [**HW 1 due**]({% link homework/1.md %}){: .label .label-red }
 
 <!-- Oct 1
 : **Lab**{: .label .label-purple } [Intro to Java](#)
