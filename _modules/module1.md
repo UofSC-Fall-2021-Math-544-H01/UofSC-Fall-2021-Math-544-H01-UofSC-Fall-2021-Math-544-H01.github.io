@@ -10,6 +10,7 @@ Aug 19
 [systems]({% link notes/solving_linear_systems/systems.md %}), 
 [vectors]({% link notes/solving_linear_systems/vectors.md %}), 
 [matrices]({% link notes/solving_linear_systems/matrices.md %})
+: [Class worksheet]({% link worksheets/1.md %})
 
 Aug 24
 : Row reduction
