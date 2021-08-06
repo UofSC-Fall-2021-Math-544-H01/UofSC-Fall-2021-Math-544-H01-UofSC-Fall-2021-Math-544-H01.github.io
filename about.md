@@ -283,7 +283,7 @@ Using the words or ideas of another as if they were one’s own is a serious for
 
 ## Group Work 
 
-Group work should be performed in socially distant manner. Remote work will certainly form a larger component of a career going forward. Now is the time to learn to work collaboratively and remotely in an efficient manner. You are encouraged to take advantage of Microsoft Teams video and chat abilities to aid in collaboration.  
+Group work should be performed in safe manner. Remote work will certainly form a larger component of a career going forward. You are encouraged to take advantage of Microsoft Teams video and chat abilities to aid in collaboration.  
 
 ## Class Conduct 
 
