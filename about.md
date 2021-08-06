@@ -132,7 +132,7 @@ To participate in learning activities and complete assignments, you will need:
 
 - If you plan to submit handwritten assignments, a scanning device such as a smartphone with the Microsoft Office Lens app.  
 
-- The main hub for this course is the Microsoft Teams team [COTEAM-BALLARMR-MATH-544-H01-FALL-2021](https://teams.microsoft.com/l/channel/19%3aJgLzdLZpFCbmrJptHxrA2E7bvjwXsxJFPmFdJmn1-CI1%40thread.tacv2/General?groupId=5ff176b0-5dbd-44cb-a436-ec0c668e897e&tenantId=4b2a4b19-d135-420e-8bb2-b1cd238998cc) run through UofSC’s Microsoft Teams account. All course materials, including recorded lectures, live lectures, assignments, handouts, will be published there. To access the team for the first time on your desktop/laptop, you can use the join link including in your welcome email.   
+- The main hub for this course is the Microsoft Teams team [COTEAM-BALLARMR-MATH-544-H01-FALL-2021](https://teams.microsoft.com/l/channel/19%3aJgLzdLZpFCbmrJptHxrA2E7bvjwXsxJFPmFdJmn1-CI1%40thread.tacv2/General?groupId=5ff176b0-5dbd-44cb-a436-ec0c668e897e&tenantId=4b2a4b19-d135-420e-8bb2-b1cd238998cc) run through UofSC’s Microsoft Teams account. To access the team for the first time on your desktop/laptop, you can use the join link including in your welcome email.   
 
 - We will be using a computer algebra system called [Sage](https://www.sagemath.org/) to aid our learning. It blows your graphing calculator out of the water and is ideally suited to STEM work. Built as a super-set of the popular programming language [Python](https://www.python.org/), Sage skills will translate into Python skills. There are three main ways to access Sage: 
     - [SageMathCell](https://sagecell.sagemath.org/) is ideal for a computation involving a few lines. 
