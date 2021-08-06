@@ -135,7 +135,8 @@ $$
 $$
 
 For example, 
-$$
+<center>
+$
  \begin{pmatrix} 1 & 2 & 3 & 4 \end{pmatrix} 
  \begin{pmatrix} 
     -1 \\
@@ -144,6 +145,7 @@ $$
     2 
  \end{pmatrix} 
   = 1(-1) + 2(0) + 3(1) + 4(2) = 10.
-$$
+$
+</center>
 
 Next, we look at [matrices]({% link notes/solving_linear_systems/matrices.md %}).

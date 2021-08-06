@@ -1,29 +1,30 @@
 ---
 title: Solving Linear Systems
+ended: false
 ---
 
-Aug 19
+Aug 24
 : Matrices and linear systems 
   : 
-: Pre-readings: [intro]({% link notes/solving_linear_systems/intro.md %}), 
+: Pre-readings: [introduction]({% link notes/solving_linear_systems/intro.md %}), 
 [linear equations]({% link notes/solving_linear_systems/linear_equations.md %}), 
 [systems]({% link notes/solving_linear_systems/systems.md %}), 
 [vectors]({% link notes/solving_linear_systems/vectors.md %}), 
 [matrices]({% link notes/solving_linear_systems/matrices.md %})
 : [Class worksheet]({% link worksheets/1.md %})
 
-Aug 24
+Aug 26
 : Row reduction
   : 
-: Pre-readings: coming by 8/17
+: Pre-readings: coming by 8/19
 <!-- [matrix equations]({% link notes/solving_linear_systems/matrix_equations.md %}) -->
-: Class worksheet: coming by 8/17
+: Class worksheet: coming by 8/19
 
-Aug 26 
+Aug 31 
 : Reduced row echelon form 
   : 
-: Pre-readings: coming by 8/19
-: Class worksheet: coming by 8/19
+: Pre-readings: coming by 8/24
+: Class worksheet: coming by 8/24
 : [**HW 1 due**]({% link homework/1.md %}){: .label .label-red }
 
 <!-- Oct 1

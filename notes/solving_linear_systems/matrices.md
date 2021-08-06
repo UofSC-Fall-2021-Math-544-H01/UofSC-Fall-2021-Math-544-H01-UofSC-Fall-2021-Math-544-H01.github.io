@@ -174,7 +174,8 @@ The entries $1$ and $4$ on the diagonal don't move and everything else is reflec
 
 Addition of matrices works in the same way as for vectors: you add the entries (or components) individually with 
 the **big caveat** that you can only add matrices of the same size. 
-$$
+<center>
+$
 \begin{pmatrix} 
     a_{11} & a_{12} & \cdots & a_{1m} \\
     a_{21} & a_{22} & \cdots & a_{2m} \\
@@ -193,7 +194,8 @@ $$
     \vdots & \vdots & \ddots & \vdots \\
     a_{n1} + b_{n1} & a_{n2} + b_{n2} & \cdots & a_{nm} + b_{nm}
 \end{pmatrix}
-$$
+$
+</center>
 
 ## Multiplication of matrices 
 

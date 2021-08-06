@@ -24,7 +24,8 @@ The syllabus can be found at the [about tab]({% link about.md %}).
 ## Calendar 
 
 At the [calendar tab]({% link calendar.md %}), you will find our topic schedule 
-for each class along with the pre-reading. 
+for each class along with the pre-reading, worksheets for that class, and 
+due dates for assignments.  
 
 ## Notes 
 

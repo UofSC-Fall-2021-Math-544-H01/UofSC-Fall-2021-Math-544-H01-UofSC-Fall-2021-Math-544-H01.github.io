@@ -368,62 +368,62 @@ Course materials that do not appear on this website are copyright &copy; 2021 Ma
 This is the (ambitious) plan for the semester. But it is only a plan. The successful progression of each student is the most important guide to through the material. As such, you should expect revisions as we go. 
 
 ## Week 1
-- 8/19 addition and multiplication of matrices and vectors
+- 8/19 welcome and orientation
 
 ## Week 2
-- 8/24 solving linear systems: row reduction 
-- 8/26 row echelon form and LU decompositions  
+- 8/24 addition and multiplication of matrices and vectors
+- 8/26 solving linear systems: row reduction 
 
 ## Week 3
-- 8/31 geometry and solvability of linear systems 
-- 9/2 ranges and null spaces of matrices - implicit and parametric representations
+- 8/31 row echelon form and LU decompositions  
+- 9/2 geometry and solvability of linear systems 
 
 ## Week 4
-- 9/7 linear dependence and spans of collections of vectors - dimensions and bases
-- 9/9 row rank, column rank
+- 9/7 ranges and null spaces of matrices - implicit and parametric representations
+- 9/9 linear dependence and spans of collections of vectors - dimensions and bases
 
 ## Week 5
-- 9/14 invertibility 
-- 9/16 vector spaces 
+- 9/14 row rank, column rank  
+- 9/16 invertibility 
 
 ## Week 6
-- 9/21 subspaces
-- 9/23 bases again
+- 9/21 vector spaces
+- 9/23 subspaces
 
 ## Week 7
-- 9/28 linear transformations
-- 9/30 kernels and images 
+- 9/28 bases again
+- 9/30 linear transformations 
 
 ## Week 8
-- 10/5 isomorphisms
+- 10/5 kernels and images
 
 ## Week 9
-- 10/12 determinants: the idea
-- 10/14 determinants: computations
+- 10/12 isomorphisms 
+- 10/14 determinants: the idea
 
 ## Week 10
-- 10/19 the complex number system
-- 10/21 eigenvalues and eigenvectors 1
+- 10/19 determinants: computations
+- 10/21 the complex number system
 
 ## Week 11
-- 10/26 eigenvalues and eigenvectors 2
-- 10/28 symmetric matrices
+- 10/26 eigenvalues and eigenvectors 1
+- 10/28 eigenvalues and eigenvectors 2
 
 ## Week 12
-- 11/2 positive definite matrices 
-- 11/4 diagonalizability
+- 11/2 symmetric matrices
+- 11/4 positive definite matrices 
 
 ## Week 13
-- 11/9 diagonalizability 2
-- 11/11 orthogonality and projections
+- 11/9 diagonalizability
+- 11/11 diagonalizability 2 
 
 ## Week 14
-- 11/16 least squares approximations
-- 11/18 gram-schmidt and QR factorization
+- 11/16 orthogonality and projections
+- 11/18 least squares approximations
 
 ## Week 15
-- 11/23 singular value decomposition
+- 11/23 gram-schmidt and QR factorization
 
 ## Week 16 
-- 11/30 selected applications
+- 11/30 singular value decomposition
 - 12/2 selected applications 
