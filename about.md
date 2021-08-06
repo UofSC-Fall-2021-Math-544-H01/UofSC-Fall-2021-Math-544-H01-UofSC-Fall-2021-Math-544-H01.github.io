@@ -209,8 +209,8 @@ All grades will be posted on Teams. You are strongly encouraged to check you sco
 | [80,85)    | B         | 
 | [75,80)    | C+        | 
 | [70,75)    | C         | 
-| [65,70)   | D+        | 
-| [60,60)    | D         | 
+| [65,70)    | D+        | 
+| [60,65)    | D         | 
 | [0,60)     | F         | 
 
 ## Assignment Submission 
