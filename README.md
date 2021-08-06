@@ -1,9 +1,9 @@
 
 <p align="center">
-    <h1 align="center">Honors Math 544 at UofSC</h1>
-    <p align="center">Linear Algebra.</p>
+    <h1 align="center">Linear Algebra</h1>
+    <p align="center">Honors 544 at UofSC in Fall 2021</p>
     <p align="center"><strong><a href="https://544.f21.matthewrobertballard.com">The actual webpage.</a></strong></p>
-    <br><br><br>
+    <br>
 </p>
 
 ## About this website
@@ -15,8 +15,4 @@ It uses the [Just the Class](https://kevinl.info/just-the-class/) theme which bu
 the [Just the Docs](https://pmarsceill.github.io/just-the-docs/) theme. 
 
 At material appearing here is copyright &copy; 2021 Matthew Ballard and is distributed with an 
-[MIT license](https://github.com/UofSC-Fall-2021-Math-544-H01-UofSC-Fall-2021-Math-544-H01.github.io/tree/master/LICENSE.txt). 
-
-## License
-
-The theme is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+[MIT license](http://opensource.org/licenses/MIT). 
