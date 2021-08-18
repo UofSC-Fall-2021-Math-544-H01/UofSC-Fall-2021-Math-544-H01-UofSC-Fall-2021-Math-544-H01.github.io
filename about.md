@@ -263,7 +263,9 @@ All absences due to documented illness or quarantine will be excused, and no gra
 
 ## COVID Policies 
 
-**I strongly encourage the use of face-coverings and getting vaccinated**. 
+As of 8/17/2021, UofSC requires face covering, including in the class. For more information on this semester's COVID policies see the [guidance](https://sc.edu/about/offices_and_divisions/provost/academicpriorities/keepteaching/guidance/index.php) from the Provost. 
+
+**I strongly encourage getting vaccinated**. 
 
 **I encourage physical distancing**. While not always possible, I will strive to keep everyone at least three feet apart, even when working in groups, which we will do regularly. If you feel uncomfortable with group work in my class, please come talk with me and I don’t mind letting you work independently at all.
 
@@ -283,9 +285,6 @@ All absences due to documented illness or quarantine will be excused, and no gra
 **What if Dr. Ballard gets sick with COVID?** I have been fully vaccinated and breakthrough infection symptoms most often resemble the common cold. In the event of a breakthrough infection, I will enter the self-isolation period and the course will switch modality to synchronous online temporarily. 
 
 In the rare circumstance I am unable to teach remotely, a substitute instructor will take over the course. 
-
-For more information on this semester's COVID policies see the [guidance](https://sc.edu/about/offices_and_divisions/provost/academicpriorities/keepteaching/guidance/index.php) from the Provost. 
-
 
 ## Academic Integrity 
 
