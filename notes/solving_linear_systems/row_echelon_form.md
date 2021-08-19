@@ -176,6 +176,3 @@ We will introduce [operations]({% link notes/solving_linear_systems/row_operatio
 which will allow us to transform any matrix into reduced row echelon. For 
 an augmented matrix $[A|b]$, the operations will preserve the set of solutions to 
 the associated linear system. 
-
-Before that, we will look at 
-[solving systems in row echelon form]({% link notes/solving_linear_systems/solving_echelon_systems.md %}). 
