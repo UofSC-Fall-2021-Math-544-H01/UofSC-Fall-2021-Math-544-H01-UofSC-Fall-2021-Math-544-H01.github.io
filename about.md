@@ -263,7 +263,7 @@ All absences due to documented illness or quarantine will be excused, and no gra
 
 ## COVID Policies 
 
-As of 8/17/2021, UofSC requires face covering, including in the class. For more information on this semester's COVID policies see the [guidance](https://sc.edu/about/offices_and_divisions/provost/academicpriorities/keepteaching/guidance/index.php) from the Provost. 
+As of 8/17/2021, UofSC requires face coverings, including in the class. For more information on this semester's COVID policies see the [guidance](https://sc.edu/about/offices_and_divisions/provost/academicpriorities/keepteaching/guidance/index.php) from the Provost. 
 
 **I strongly encourage getting vaccinated**. 
 

@@ -14,14 +14,14 @@ Aug 24
 : [Class worksheet]({% link worksheets/1.md %})
 
 Aug 26
-: Row reduction
+: Row reduction and reduced row echelon form
   : 
-: Pre-readings: coming by 8/19
+: Pre-readings: coming by 8/21
 <!-- [matrix equations]({% link notes/solving_linear_systems/matrix_equations.md %}) -->
-: Class worksheet: coming by 8/19
+: Class worksheet: coming by 8/21
 
 Aug 31 
-: Reduced row echelon form 
+: Solutions to systems 
   : 
 : Pre-readings: coming by 8/24
 : Class worksheet: coming by 8/24
