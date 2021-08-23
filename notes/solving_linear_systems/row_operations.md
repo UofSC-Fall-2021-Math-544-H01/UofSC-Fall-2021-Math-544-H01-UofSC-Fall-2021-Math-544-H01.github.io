@@ -37,7 +37,7 @@ Let's try to capture the idea of "the new system obtained from the old system by
 scaling the a row by a constant" in terms of matrix notation. 
 
 By multiplying by specific matrices, we can achieve a good number of interesting 
-operations. As part of your homework, you will need to verify the following fact: 
+operations. 
 
 **Definition**: Let $S(i,c)\_m$ denote the $m \times m$ matrix whose entries are $0$ off the 
 diagonal and all of whose entries on the diagonal are $1$ _except_ for the i-th 
@@ -54,7 +54,8 @@ $$
 	\end{pmatrix}
 $$
 
-As part of your homework, you are asked to verify the following fact. 
+As part of [Homework 1]({% link homework/1.md %}), 
+you will need to verify the following fact: 
 
 **Lemma**: For any $m \times n$ matrix $A$, the product $B := S(l,c)_m A$ is a 
 $m \times n$ matrix satisfying 
@@ -115,7 +116,8 @@ $$
 	P(i,j) B = B - D(i,i) B - D(j,j) B + D(i,j) B + D(i,j) B
 $$
 
-From the homework, we know that $D(i,j) B$ is the matrix whose which is $0$ 
+From the [Homework 1]({% link homework/1.md %}), we know that $D(i,j) B$ 
+is the matrix whose which is $0$ 
 except for the i-th row which is equal to the j-th row of $B$.  So reading 
 $$
 	B - D(i,i) B - D(j,j) B + D(j,i) B + D(i,j) B
