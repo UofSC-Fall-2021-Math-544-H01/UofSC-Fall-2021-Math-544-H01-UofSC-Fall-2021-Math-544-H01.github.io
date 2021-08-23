@@ -16,15 +16,17 @@ Aug 24
 Aug 26
 : Row reduction and reduced row echelon form
   : 
-: Pre-readings: coming by 8/21
-<!-- [matrix equations]({% link notes/solving_linear_systems/matrix_equations.md %}) -->
-: Class worksheet: coming by 8/21
+: Pre-readings: [matrix equations]({% link notes/solving_linear_systems/matrix_equations.md %}),
+[row echelon form]({% link notes/solving_linear_systems/row_echelon_form.md %}),
+[row operations]({% link notes/solving_linear_systems/row_operations.md %}),
+[row operations and solutions to linear systems]({% link notes/solving_linear_systems/effect_on_solutions.md %})
+: [Class worksheet]({% link worksheets/2.md %})
 
 Aug 31 
-: Solutions to systems 
+: Gaussian elimination
   : 
-: Pre-readings: coming by 8/24
-: Class worksheet: coming by 8/24
+: Pre-readings: coming by 8/26
+: Class worksheet: coming by 8/26
 : [**HW 1 due**]({% link homework/1.md %}){: .label .label-red }
 
 <!-- Oct 1
