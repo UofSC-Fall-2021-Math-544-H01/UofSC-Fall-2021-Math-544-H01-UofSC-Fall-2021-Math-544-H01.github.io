@@ -109,7 +109,7 @@ else if all a_i == 0 and b == 0:
     return [x_1,...,x_m]
 else:
     pick i with a_i != 0 
-    set x_i = (a_1/a_i)*x_1-...-(a_{i-1}/a_i)*x_{i-1} - (a_{i+1}/a_i)*x_{i+1} - ... -(a_m/a_1)*x_m
+    set x_i = b - (a_1/a_i)*x_1-...-(a_{i-1}/a_i)*x_{i-1} - (a_{i+1}/a_i)*x_{i+1} - ... -(a_m/a_1)*x_m
     return [x_1,...,x_m]
 ```
 
