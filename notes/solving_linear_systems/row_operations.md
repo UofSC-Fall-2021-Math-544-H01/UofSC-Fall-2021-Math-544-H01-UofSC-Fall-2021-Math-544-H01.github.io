@@ -207,6 +207,7 @@ $$
 $$
 
 These three families of operations are the tools we will use to operate on systems and transform 
-them into (reduced) row echelon form. Before delving into that algorithm, we will first show 
+them into (reduced) row echelon form. Before delving into 
+[that algorithm]({% link notes/solving_linear_systems/gaussian_elimination.md %}), we will first show 
 that our solution sets [do not change]({% link notes/solving_linear_systems/effect_on_solutions.md %}) 
 under scaling a row, exhanging rows, or subtracting off a scalar multiple of a row. 

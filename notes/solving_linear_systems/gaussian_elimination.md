@@ -6,7 +6,12 @@ has_children: false
 has_toc: false
 parent: Solving Linear Systems
 grand_parent: Notes
+work_in_progress: true 
 ---
+
+{% if page.work_in_progress %}
+    WORK IN PROGRESS
+{% endif %}
 
 ## Gauss the prince of mathematics!
 
