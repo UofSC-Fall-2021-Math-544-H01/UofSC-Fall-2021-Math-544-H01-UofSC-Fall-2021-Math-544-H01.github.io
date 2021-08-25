@@ -10,13 +10,14 @@ Aug 24
 [linear equations]({% link notes/solving_linear_systems/linear_equations.md %}), 
 [systems]({% link notes/solving_linear_systems/systems.md %}), 
 [vectors]({% link notes/solving_linear_systems/vectors.md %}), 
-[matrices]({% link notes/solving_linear_systems/matrices.md %})
+[matrices]({% link notes/solving_linear_systems/matrices.md %}),
+[matrix equations]({% link notes/solving_linear_systems/matrix_equations.md %})
 : [Class worksheet]({% link worksheets/1.md %})
 
 Aug 26
 : Row reduction and reduced row echelon form
   : 
-: Pre-readings: [matrix equations]({% link notes/solving_linear_systems/matrix_equations.md %}),
+: Pre-readings: 
 [row echelon form]({% link notes/solving_linear_systems/row_echelon_form.md %}),
 [row operations]({% link notes/solving_linear_systems/row_operations.md %}),
 [row operations and solutions to linear systems]({% link notes/solving_linear_systems/effect_on_solutions.md %})
