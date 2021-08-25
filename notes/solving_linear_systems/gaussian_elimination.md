@@ -13,6 +13,6 @@ work_in_progress: true
     WORK IN PROGRESS
 {% endif %}
 
-## Gauss the prince of mathematics!
+## Gauss a prince of mathematics!
 
 ![Dapper Carl](/assets/images/gauss.jpg)
