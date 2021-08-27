@@ -107,9 +107,8 @@ $P(i,j)\_m$. We can write
 $$
 	P(i,j)_m = I_m - D(i,i) - D(j,j)+ D(j,i) + D(i,j) 
 $$
-where $I\_m$ is the $m \times m$ identity matrix, $D\_i$ is the matrix whose only 
-non-zero entry is a $1$ in the $(i,i)$ entry, and $O_{i,j}$ is the matrix whose only 
-non-zero entry is a $1$ in the $(i,j)$ entry.
+where $I\_m$ is the $m \times m$ identity matrix and $D(i,j)$ is matrix described in 
+[Worksheet 2]({% link worksheets/2.md %})
 
 So 
 $$
