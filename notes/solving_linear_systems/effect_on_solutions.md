@@ -146,7 +146,7 @@ We have established the following theorem.
 
 -----
 
-### Theorem on Row Operations and Solutions 
+### Theorem on Row Operations and Solution Sets
 
 Let $(A \mid b)$ be a linear system. Let $(A^\prime \mid b^\prime)$ be the linear system obtained 
 from $(A \mid b)$ by a sequence of the following operations: 
