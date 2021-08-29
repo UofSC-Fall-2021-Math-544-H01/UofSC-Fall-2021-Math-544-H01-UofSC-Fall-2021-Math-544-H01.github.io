@@ -6,7 +6,7 @@ has_children: false
 has_toc: false
 parent: Solving Linear Systems
 grand_parent: Notes
-work_in_progress: true 
+work_in_progress: false 
 ---
 
 {% if page.work_in_progress %}
@@ -122,7 +122,7 @@ of the free variable.
 ### Step 3
 
 Substitute the expression from Step 2 back in to the eliminate the bound variable $x_i$ 
-from the system. Eliminate the corresponding row and column from the pivot. 
+from the system. Delete the corresponding row and column from the pivot. 
 
 Go back to to Step 2. 
 
@@ -148,19 +148,29 @@ for all linear systems.
 
 ### Dichotomy of solutions
 
-For solutions to reduced row echelon systems, there is a dichotomy that mirrors 
+There is a dichotomy that mirrors 
 the case of 
 [a single linear equation]({%link notes/solving_linear_systems/linear_equations.md %}#dichotomy-of-solutions). 
 
 -----
 
-**Theorem**: Let $[ A \mid b ]$ be a linear system in row echelon form. The 
-system has a solution if and only if whenever there is a zero row, the 
-corresponding entry of $\mathbf{b}$ is also $0$. 
-
-Moreover, if there is a solution, then there is a unique solution if and only 
-if there are no free variables. Otherwise, there are infinitely many solutions. 
+**Theorem**: Let $(A \mid b)$ be a linear system. Then 
+- there are infinitely-many solutions, 
+- there is a unique solution, or
+- there are no solutions at all. 
 
 -----
 
-To understand the the proof of this theorem, we will poke at the algorithm above a bit. 
+If $(A \mid b)$ is in row echelon form, then we can identify these which case we fall into very quickly. 
+
+There is an equation with $0$ equal to a nonzero number if and only if we have no solution. 
+
+Otherwise, the set of solutions of solution is parameterized by the free variables. If the set of 
+free variables is non-empty, then we are going to have infinitely many solutions. 
+
+If there are no free variables, then each time we solve out a free variable in the 
+[algorithm above](#Algorithm-for-solving-systems-in-reduced-row-echelon-form) we are getting a 
+single number. 
+
+Since we know this behavior holds for all row echelon systems, we can also conclude it holds for 
+all linear systems in general. 
