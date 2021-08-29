@@ -26,9 +26,17 @@ Aug 26
 Aug 31 
 : Gaussian elimination
   : 
-: Pre-readings: coming by 8/26
-: Class worksheet: coming by 8/26
+: Pre-readings: 
+[the algorithm]({% link notes/solving_linear_systems/gaussian_elimination.md %}), 
+[solving systems in row echelon form]({% link notes/solving_linear_systems/solving_echelon_systems.md %})
+: [Class worksheet]({% link worksheets/3.md %})
 : [**HW 1 due**]({% link homework/1.md %}){: .label .label-red }
+
+Sept 2
+: **LU factorizations of matrices**
+  :
+: Pre-readings: coming by Aug 30
+: Class worksheet : coming by Aug 30 
 
 <!-- Oct 1
 : **Lab**{: .label .label-purple } [Intro to Java](#)

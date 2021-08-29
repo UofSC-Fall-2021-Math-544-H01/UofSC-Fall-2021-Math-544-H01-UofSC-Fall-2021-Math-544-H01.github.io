@@ -6,7 +6,7 @@ has_children: false
 has_toc: false
 parent: Solving Linear Systems
 grand_parent: Notes
-work_in_progress: true 
+work_in_progress: false 
 ---
 
 {% if page.work_in_progress %}
@@ -193,10 +193,25 @@ Same as before.
 
 Also the same.
 
-## New Step 2
+## Step 1.5 
+
+Scale all the rows so that all pivots have value $1$
+
+## Step 2
 
 Reading left to right, find the first column $\mathbb{C}_j$ such that 
 - there is a pivot $a_{pj}$ from row $\mathbf{R}_p$ in $\mathbb{C}_j$ and 
 - there is some some $a_{sj} \neq 0 $ with $s \neq p$, ie anywhere in the column 
 not just below.
+
+If there are none, you are done. 
+
+Otherwise, let $\mathbf{R}_p$ be the row with the smallest $p$ of all the rows 
+that have their pivots in $\mathbf{C}_j$. 
+
+For all $t \neq s$ replace the row $\mathbf{R}\_t$ of $(A \mid b)$ with 
+$$
+    \mathbf{R}_t - \frac{a_{tj}}{a_{pj}} \mathbf{R}_p
+$$
+
 
