@@ -63,7 +63,7 @@ algorithm for solving a single linear equation until there are no more linear eq
 
 -----
 
-### Algorithm for solving a system of linear equations:
+### Algorithm for solving a system of linear equations
 We can write this algorithm for a general system that is simple to state but can be expensive to carry out. 
 
 **Step 1** 

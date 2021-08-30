@@ -136,7 +136,12 @@ for all bound variables $x_j$ of the system.
 Thus, we know how to solve any system in row echelon form (the algorithm is easier to 
 run if the system is already in reduced row echelon form). 
 
-But thanks to the magic of the 
+In fact, this algorithm is a more careful version of the 
+[naive algorithm]({% link notes/solving_linear_systems/systems.md%}#Algorithm-for-solving-a-system-of-linear-equations) 
+we saw previously. The value is that we can better reason about the structure of solutions 
+from this algorithm, e.g. understanding the solution space in terms of free variables. 
+
+Also thanks to the magic of the 
 [Theorem on row operations and solution sets]({% link notes/solving_linear_systems/effect_on_solutions.md%}#Theorem-on-Row-Operations-and-Solution-Sets)
 and [Gaussian Elimination]({% link notes/solving_linear_systems/gaussian_elimination.md %}) we 
 also know that given any system of linear equations $(A \mid b)$ we can apply row 
