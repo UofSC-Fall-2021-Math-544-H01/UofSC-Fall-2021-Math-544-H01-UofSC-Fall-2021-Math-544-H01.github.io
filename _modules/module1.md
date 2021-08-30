@@ -33,10 +33,18 @@ Aug 31
 : [**HW 1 due**]({% link homework/1.md %}){: .label .label-red }
 
 Sept 2
-: **LU factorizations of matrices**
-  :
-: Pre-readings: coming by Aug 30
-: Class worksheet : coming by Aug 30 
+: Invertibility
+  : 
+: Pre-readings: 
+[invertibility]({% link notes/solving_linear_systems/invertibility.md %})
+: [Class worksheet]({% link worksheets/4.md %})
+
+Sept 7 
+: Equations for solvable systems
+  : 
+: Pre-readings: coming by Sept 1
+: Class worksheet: coming by Sept 1
+: [**HW 2 due**]({% link homework/2.md %}){: .label .label-red }
 
 <!-- Oct 1
 : **Lab**{: .label .label-purple } [Intro to Java](#)
