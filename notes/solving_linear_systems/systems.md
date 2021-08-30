@@ -64,10 +64,24 @@ algorithm for solving a single linear equation until there are no more linear eq
 -----
 
 ### Algorithm for solving a system of linear equations:
-We can write this algorithm for a general system in pseudo-code. We write `algorithm_single_equation(l)` for the 
-application of the [algorithm for a single linear equation]({% link notes/solving_linear_systems/linear_equations.md %}/#algorithm-for-solving-a-linear-equation) to a linear equation l. 
+We can write this algorithm for a general system that is simple to state but can be expensive to carry out. 
 
-```
+**Step 1** 
+Identify a variable $x_i$ and an equation $l_j$ with $a_{ij} \neq 0$. 
+
+**Step 2** 
+Use $l_j$ to solve for $x_i$ in terms of the other variables. 
+
+**Step 3** 
+Substitute in your expression from step 2 for all occurrences of $x_i$. Simplify. If we end up with an 
+equation of the form $0 = b$ with $b \neq 0$, stop and output "No Solution". 
+
+Delete $l_j$ from your system. Return to step 1 with the new system. 
+
+<!-- in pseudo-code. We write `algorithm_single_equation(l)` for the 
+application of the [algorithm for a single linear equation]({% link notes/solving_linear_systems/linear_equations.md %}/#algorithm-for-solving-a-linear-equation) to a linear equation l.  -->
+
+<!-- ```
 variables = [x_1,...,x_m]
 linear equations = [l_1,...,l_n]
 
@@ -83,7 +97,7 @@ while number of equations != 0:
             substitute algorithm_single_equation(l) into l'
 
 return [x_1,...,x_m]
-```
+``` -->
 
 In words, we pick a nonzero linear equation. Either we eliminate a variable or we have a contradiction (where $0$ equals $\neq 0$). 
 If we have a contradiction, we stop because we have no solution. Otherwise, we eliminate the chosen variable by rewriting it using 
@@ -95,6 +109,8 @@ This algorithm is a bit more opaque than the one for a single equation. Ask your
 - No Solution
 - A single solution
 - Infinitely many solutions? 
+
+What can it tell us about the structure of the solution set in general? 
 
 It also is not the most efficient one. 
 

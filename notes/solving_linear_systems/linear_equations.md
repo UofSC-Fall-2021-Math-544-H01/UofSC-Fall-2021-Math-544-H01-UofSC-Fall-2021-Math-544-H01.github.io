@@ -101,8 +101,18 @@ Before we turn to systems of linear equations, let's recap some important points
 --------
 
 ### Algorithm for solving a linear equation:
-We can write the algorithm for solving $a_1x_1 + \cdots + a_mx_m = b$ described above in pseudo-code. 
-```
+We can summarize the algorithm for solving $a_1x_1 + \cdots + a_mx_m = b$ described above.
+
+**Step 1**
+
+If we have an equation of the form $0 = b$ with $b \neq 0$, then output "No Solution". 
+
+**Step 2**
+
+Otherwise, identify some $x_i$ with $a_i \neq 0$ and solve for $x_i$ in terms of the other 
+variables. 
+
+<!-- ```
 if all a_i == 0 and b != 0:
     return No Solution
 else if all a_i == 0 and b == 0:
@@ -111,7 +121,7 @@ else:
     pick i with a_i != 0 
     set x_i = b/a_i - (a_1/a_i)*x_1-...-(a_{i-1}/a_i)*x_{i-1} - (a_{i+1}/a_i)*x_{i+1} - ... -(a_m/a_1)*x_m
     return [x_1,...,x_m]
-```
+``` -->
 
 ### Dichotomy of solutions:
 For a linear equation, $a_1x_1 + \cdots a_mx_m = b$, we have three possibilities 
