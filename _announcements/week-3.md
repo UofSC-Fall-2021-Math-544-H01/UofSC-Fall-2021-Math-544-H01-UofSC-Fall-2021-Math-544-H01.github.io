@@ -4,6 +4,8 @@ week: 3
 date: 2021-08-31
 ---
 
+* My office hours have changed to Tuesdays and Thursdays 7:45-8:30 and 11:30-12:15. 
+
 * I would like to see how submitting the quiz via Teams goes. Please download and install either the 
     - [OneDrive Android App](https://play.google.com/store/apps/details?id=com.microsoft.skydrive&hl=en_US&gl=US) or 
     - [OneDrive iOS App](https://apps.apple.com/us/app/microsoft-onedrive/id477537958)

@@ -1,5 +1,6 @@
 ---
 timeline:
+  - '7:30 AM'
   - '8:00 AM'
   - '8:30 AM'
   - '9:00 AM'
@@ -25,8 +26,12 @@ schedule:
       end: 9:45 AM
       location: COL 3007
     - name: Office Hours
+      start: 7:45 AM
+      end: 8:30 AM
+      location: COL 1022C
+    - name: Office Hours
       start: 11:30 AM
-      end: 1:00 PM
+      end: 12:15 PM
       location: COL 1022C
   - name: Wednesday
   - name: Thursday
@@ -36,8 +41,12 @@ schedule:
       end: 9:45 AM
       location: COL 3007
     - name: Office Hours
+      start: 7:45 AM
+      end: 8:30 AM
+      location: COL 1022C
+    - name: Office Hours
       start: 11:30 AM
-      end: 1:00 PM
+      end: 12:15 PM
       location: COL 1022C
   - name: Friday
 ---

@@ -46,7 +46,7 @@ Tuesdays and Thursdays 8:30-9:45 AM in Room 3007 of the [Carolina Coliseum](http
 
 ## Office Hours
 
-Tuesdays and Thursdays 11:30-1:00 or by appointment 
+Tuesdays and Thursdays 7:45-8:30 and 11:30-12:15 or by appointment 
  
 
 ## Academic Bulletin Description 
