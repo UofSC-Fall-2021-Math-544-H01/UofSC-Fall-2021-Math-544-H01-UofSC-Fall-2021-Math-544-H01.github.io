@@ -42,8 +42,8 @@ Sept 2
 Sept 7 
 : Equations for solvable systems
   : 
-: Pre-readings: coming by Sept 1
-: Class worksheet: coming by Sept 1
+: Pre-readings: coming by Sept 3
+: Class worksheet: coming by Sept 3
 : [**HW 2 due**]({% link homework/2.md %}){: .label .label-red }
 
 <!-- Oct 1
