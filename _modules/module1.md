@@ -46,6 +46,12 @@ Sept 7
 : Class worksheet: coming by Sept 3
 : [**HW 2 due**]({% link homework/2.md %}){: .label .label-red }
 
+Sept 9 
+: LU factorizations
+  : 
+: Pre-readings: [LU factorizations]({% link notes/solving_linear_systems/lu_factorizations.md %})
+: Class worksheet: coming by Sept 6
+
 <!-- Oct 1
 : **Lab**{: .label .label-purple } [Intro to Java](#)
 

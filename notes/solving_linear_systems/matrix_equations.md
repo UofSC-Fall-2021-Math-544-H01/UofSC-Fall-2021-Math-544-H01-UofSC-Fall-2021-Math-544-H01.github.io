@@ -65,7 +65,11 @@ $$
 $$
 
 We will write $(A \mid b)$ to denote the augmented matrix. We will often talk about the set of solutions 
-to a linear system $(A \mid b)$ and we will use the notation $\mathcal Z(A \mid b)$ for this set. 
+to a linear system $(A \mid b)$ and we will use the notation $\mathcal Z(A \mid b)$ for this set. When $\mathbf{b} = \mathbf{0}$ 
+we set 
+$$
+    \mathcal Z(A) = \mathcal Z(A \mid \mathbf{0}).
+$$
 
 Our next task is to understand how we can enhance our understanding of solutions of linear systems 
 by using matrices. We will study which [operations]({% link notes/solving_linear_systems/row_operations.md %}) on (augmented) matrices can simplify the 

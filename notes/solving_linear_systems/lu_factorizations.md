@@ -1,7 +1,7 @@
 ---
 layout: page
 title: LU Factorizations 
-nav_order: 12
+nav_order: 13
 has_children: false
 has_toc: false
 parent: Solving Linear Systems
@@ -52,147 +52,222 @@ $$
 only has a single diagonal entry, $5$. This $A$ is trivially upper triangular but 
 is very far from lower diagonal. 
 
-<!-- ### Theorem: LUP Factorization 
+### Definitions
 
-Given a $m \times n$ matrix $A$, there exists 
-- an $m \times m$ lower triangular matrix $L$ with $L_{ii} = 1$ for all $1 \leq i \leq m$ 
-- an $m \times n$ upper triangular matrix $U$ such that and 
-- an $n \times n$ permutation matrix $P$ such that
+An _LU factorization_ of a $m \times n$ matrix $A$ is a lower triangular $m \times m$ 
+matrix $L$ with $L_{ii} = 1$ for each $i$ and an upper triangular $m \times n$ matrix 
+$U$ where 
 $$
-    A = LUP.
-$$
-
-The best part of this theorem is that we can prove it using an algorithm that is 
-a slight modification, in fact a simplication, of 
-[Gaussian Elimination]({% link notes/solving_linear_systems/gaussian_elimination.md %}). 
-
-To illustrate the idea, first notice that any matrix in row echelon form is 
-automatically upper triangular. Indeed, if $A$ is not $0$, then the first row has to 
-be nonzero. Let $a_{1p}$ be the pivot in $\mathbf{R}_1$. From the definition 
-row echelon form, we know that $a_{iq} = 0$ for $i > 1$ and $q \leq p$. Thus, the 
-pivot for $\mathbf{R}_2$ by at most $a_{2 (p+1)$, the entry down one and to the right one. 
-(It doesn't have to be the pivot, of course, but that is smallest column index 
-it could possibly have.) 
-
-Continuing down the rows, we see that all entries below the (off-)diagonal starting at 
-$a_{1p}$ must vanish so $A$ must be upper triangular. 
-
-### From row operations to factorizations
-
-Recall that each step in Gaussian Elimination can be expressed as multiplication with 
-a particular type of $m \times m$ matrix: 
-- Scaling via $S(i,c)$ for $c \neq 0$
-- Permutations via $P(i,j)$ 
-- Linear combination via $L(i,j,c)$ for $i \neq j$
-
-Thus if $A^\prime$ denotes the next step in Gaussian elimination we already know that 
-$$
-    A^\prime = E A
-$$
-for $E$ one of these matrices. 
-
-We also know that we can undo multiplication by each of these matrices:
-- $S(i,c) S(i,1/c) = I$ from [Homework 2]({% link homework/2.md %})
-- $P(i,j) P(j,i) = I$ from [Homework 1]({% link homework/1.md %})
-- $L(i,j,c) L(i,j,-c) = I$ from [Worksheet 2]({% link worksheets/2.md %})
-
-Let's introduce a notion to capture "undo-ability". We say a matrix $A$ is _invertible_ 
-if there is another matrix $B$ such that 
-$$
-    A B = I = B A.
-$$
-It turns out that any such $B$ is automatically unique. Therefore, we use the notation 
-$A^{-1}$ to represent the matrix that satisfies 
-$$
-    A A^{-1} = I = A^{-1} A 
+    A = LU. 
 $$  
-if it exists. We will delve more deepy into the consequences of 
-[invertibility]({% link notes/solving_linear_systems/invertibility.md%}) momentarily. 
 
-Rewriting the previous statements in the new notation says
-- $S(1,c)^{-1} = S(1,1/c)$ if $c \neq 0$
-- $P(i,j)^{-1} = P(i,j)$ and 
-- $L(i,j,c)^{-1} = L(i,j,-c)$ if $i \neq j$
+_If it exists_, an LU factorization is very useful information about the matrix $A$.
 
-If $A^\prime = EA$, we can multiply by $E^{-1}$ on the left to get 
+### LU factorizations = Gaussian Elimination without permutations
+
+To see why, we revisit the 
+[Gaussian Elimination algorithm]({% link notes/solving_linear_systems/gaussian_elimination.md %}) 
+with an assumption about how it works on an $A$. 
+
+Assume that each time we pass through Step 1 in the Gaussian Elimination Algorithm, we 
+actually don't need to perform any row exchanges. 
+
+Each iteration of Step 2 is multiplication by $L(i,j,c)$ for $i > j$ since we are always taking the 
+smallest row index, with pivots in a fixed column, and using multiples of it to eliminate the 
+other entries in rows below it. 
+
+Thus, if $A^\prime$ is obtained from $A$ in Step, we have 
 $$
-    E^{-1} A^\prime = E^{-1} E A = I A = A
+    A^\prime = L(i,j,c)A 
 $$
-a factorization of $A$ in terms of $A^\prime$ and $E^{-1}$. 
+for $i > j$. 
 
-For what $E$ is $E^{-1}$ lower triangular? 
+At the end of Gaussian Elimination, $A^\prime$ is upper triangular since it is in row echelon form. 
 
-$S(1,c)$ is diagonal so it is both lower and upper triangular at the same time. 
-
-$P(i,j)$ is never upper or lower triangular for $i \neq j$. 
-
-$L(i,j,c)$ is lower triangular if $i > j$. If $i < j$, it is upper triangular. For example, 
+Taking all the steps together, we get 
 $$
-    L(1,3,c) =
+    U = \prod_{t=1}^N L(i_t,j_t,c_t) A
+$$
+We can cancel off the product by using its inverse. We remember the inverse of product reverses it ordering
+$$
+    \left(\prod_{t=1}^N L(i_t,j_t,c_t) \right)^{-1} = \prod_{t=N}^1 L(i_t,j_t,c_t)^{-1} = \prod_{t=N}^1 L(i_t,j_t,-c_t)
+$$
+The product of lower triangular matrices with $1$'s on the diagonal is another lower triangular matrix with $1$'s 
+on the diagonal.
+
+Thus, if we set 
+$$
+    L = \prod_{t=N}^1 L(i_t,j_t,c_t)^{-1}
+$$
+we get a LU factorization of $A$
+$$
+    LU = A. 
+$$  
+
+Let's do an example. 
+$$
+    A = \begin{pmatrix}
+            1 & 2 & 3 & 1 \\ 
+            2 & 2 & 2 & 2 \\
+            2 & 0 & -1 & 3 
+        \end{pmatrix}
+$$
+<details>
+<summary>
+Expand for computations. 
+</summary>
+We need to keep track of each row subtraction as we do Gaussian elimination. 
+
+First we take $\mathbf{R}_2 - 2\mathbf{R}_1$ and then $\mathbf{R}_3 - 2\mathbf{R}_1$ to get 
+$$
     \begin{pmatrix}
-        1 & 0 & c \\
+        1 & 2 & 3 & 1 \\ 
+        0 & -2 & -4 & 0 \\
+        0 & -4 & -7 & 1 
+    \end{pmatrix}
+$$
+and our list of row operations so far is 
+$$
+    \begin{pmatrix}
+        1 & 0 & 0 \\ 
         0 & 1 & 0 \\
-        0 & 0 & 1
-    \end{pmatrix}
-$$
-
-We want use just $L(i,j,c)$ with $i < j$ to reduce our matrix $A$ to an upper triangular matrix. 
-
-### An algorithm for LU factorization 
-
-We will keep a running list of matrices starting at the empty list $\ell = []$. We start with a 
-$m \times n$ matrix $A_0$. Set $A = A_0$. 
-
-**Step 1**
-
-Reading left to right, find the first column of $A$ with both a pivot $a_{ij}$ with $i < j$ 
-and a nonzero entry $a_{sj}$ with $s > i$. 
-
-If there is none, go to step 2. 
-
-Otherwise, multiply $A$ by $L(s,i,-a_{sj}/a_{ij})$ to get 
-$$
-    A^\prime = L(s,i,-a_{sj}/a_{ij}) A
-$$
-Add $L(s,i,-a_{sj}/a_{ij})$ to the end of $\ell$. Replace $A$ by $A^\prime$ and return to the start of 
-step 1. 
-
-**Step 2** 
-
-The two outputs of step 2 are $A$ and $\ell$. Take the product over all the matrices in our list 
-$$
-    L := \prod_{l \in \ell} L(i_l,j_l,-c_l)
-$$
-and set 
-$$
-    U := A. 
-$$
-
-Before trying to reason about the algorithm, let us see it at work in an example. Take 
-$$
-    A_0 = 
+        -2 & 0 & 1  
+    \end{pmatrix} \ , \ 
     \begin{pmatrix}
-        1 & -2 & 0 \\
-        2 & 3 & -1 \\
-        0 & -1 & 0 
-    \end{pmatrix}
-$$
-We identify $a_{21}$ as the first element we want to eliminate. Then, we have 
-$$
-    \begin{pmatrix}
-        1 & 0 & 0 \\
+        1 & 0 & 0 \\ 
         -2 & 1 & 0 \\
-        0 & 0 & 1 
+        0 & 0 & 1  
+    \end{pmatrix}
+$$
+
+Next we take $\mathbf{R}_3 - 2\mathbf{R}_2$ to get 
+$$
+    \begin{pmatrix}
+        1 & 2 & 3 & 1 \\ 
+        0 & -2 & -4 & 0 \\
+        0 & 0 & 1 & 1 
+    \end{pmatrix}
+$$
+which is in row echelon form. Our list of matrices now reads 
+$$
+    \begin{pmatrix}
+        1 & 0 & 0 \\ 
+        0 & 1 & 0 \\
+        0 & -2 & 1  
+    \end{pmatrix} \ , \ 
+    \begin{pmatrix}
+        1 & 0 & 0 \\ 
+        0 & 1 & 0 \\
+        -2 & 0 & 1  
+    \end{pmatrix} \ , \ 
+    \begin{pmatrix}
+        1 & 0 & 0 \\ 
+        -2 & 1 & 0 \\
+        0 & 0 & 1  
+    \end{pmatrix}
+$$
+
+To get our $L$ we take the product of the inverses in the inverted order
+$$
+    L = \begin{pmatrix}
+        1 & 0 & 0 \\ 
+        -2 & 1 & 0 \\
+        0 & 0 & 1  
+    \end{pmatrix}^{-1} 
+    \begin{pmatrix}
+        1 & 0 & 0 \\ 
+        0 & 1 & 0 \\
+        -2 & 0 & 1  
+    \end{pmatrix}^{-1}
+    \begin{pmatrix}
+        1 & 0 & 0 \\ 
+        0 & 1 & 0 \\
+        0 & -2 & 1  
+    \end{pmatrix}^{-1} = \\
+    {} \\
+    \begin{pmatrix}
+        1 & 0 & 0 \\ 
+        2 & 1 & 0 \\
+        0 & 0 & 1  
     \end{pmatrix} 
     \begin{pmatrix}
-        1 & -2 & 0 \\
-        2 & 3 & -1 \\
-        0 & -1 & 0 
+        1 & 0 & 0 \\ 
+        0 & 1 & 0 \\
+        2 & 0 & 1  
+    \end{pmatrix}
+    \begin{pmatrix}
+        1 & 0 & 0 \\ 
+        0 & 1 & 0 \\
+        0 & 2 & 1  
     \end{pmatrix} = 
     \begin{pmatrix}
-        1 & -2 & 0 \\
-        0 & 7 & -1 \\
-        0 & -1 & 0 
+        1 & 0 & 0 \\ 
+        2 & 1 & 0 \\
+        2 & 2 & 1  
     \end{pmatrix}
 $$
-Now we repeat with  -->
+</details>
+
+Our LU factorization is 
+$$
+    \begin{pmatrix}
+        1 & 2 & 3 & 1 \\ 
+        2 & 2 & 2 & 2 \\
+        2 & 0 & -1 & 3 
+    \end{pmatrix}
+    =
+    \begin{pmatrix}
+        1 & 0 & 0 \\ 
+        2 & 1 & 0 \\
+        2 & 2 & 1  
+    \end{pmatrix}
+    \begin{pmatrix}
+        1 & 2 & 3 & 1 \\ 
+        0 & -2 & -4 & 0 \\
+        0 & 0 & 1 & 1 
+    \end{pmatrix}
+$$
+
+### LU factorization with partial pivoting
+
+The assumption that we don't need to use any row exchanges is not a vacuous one. Take for example
+$$
+    \begin{pmatrix}
+        0 & 1 \\
+        1 & 0 
+    \end{pmatrix}
+$$
+There is no way to write it as a product $LU$. 
+
+We will need row exchanges at some point for this example and in general. 
+
+A more general factorization always exists. Recall that we call matrices $P(i,j)$ 
+permutation matrices. In fact, they are special examples of a more general notion of 
+a permutation matrix. 
+
+A _permutation matrix_ is a square matrix with exactly one nonzero entry in each row 
+and in each column. That one nonzero entry is required to be a $1$. Note $P(i,j)$ is 
+indeed an example of such matrix. 
+
+Such matrices are called permutation matrices because you can obtain them from $I$ by 
+shuffling the rows vectors (or shuffling the column vectors). 
+
+An _LU factorization with partial pivoting_ of 
+a $m \times n$ matrix $A$ is a $m \times m$ permutation matrix $P$, 
+a lower triangular $m \times m$ matrix $L$ with $1$'s along the diagonal, and an $m \times n$
+upper triangular matrix $U$ such that 
+$$
+    PA = LU.
+$$
+
+**Theorem**. Any matrix has an LU factorization with partial pivoting. 
+
+**Proof (Sketch)**. We won't provide the full details at the moment. 
+
+The essential idea is that, instead of the existing flow in the 
+[Gaussian Elimination algorithm]({% link notes/solving_linear_systems/gaussian_elimination.md %}) 
+where we return to Step 1 to permute rows after each step 2, we perform a well-chosen 
+permutation $P$ on the rows of $A$ to start. 
+
+After this permutation, we are able to run Gaussian Elimination without any more 
+row permutations to get $PA = LU$. 
