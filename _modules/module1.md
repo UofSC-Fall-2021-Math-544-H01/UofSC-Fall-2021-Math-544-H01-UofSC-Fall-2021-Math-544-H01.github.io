@@ -42,7 +42,7 @@ Sept 2
 Sept 7 
 : Equations for solvable systems
   : 
-: Pre-readings: coming by Sept 3
+: Pre-readings: [equations for solvability]({% link notes/solving_linear_systems/equations_for_solvable_systems.md %})
 : Class worksheet: coming by Sept 3
 : [**HW 2 due**]({% link homework/2.md %}){: .label .label-red }
 
