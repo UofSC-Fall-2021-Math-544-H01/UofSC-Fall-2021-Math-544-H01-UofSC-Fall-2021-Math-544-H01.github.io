@@ -43,14 +43,21 @@ Sept 7
 : Equations for solvable systems
   : 
 : Pre-readings: [equations for solvability]({% link notes/solving_linear_systems/equations_for_solvable_systems.md %})
-: Class worksheet: coming by Sept 3
+: [Class worksheet]({% link worksheets/5.md %})
 : [**HW 2 due**]({% link homework/2.md %}){: .label .label-red }
 
 Sept 9 
 : LU factorizations
   : 
 : Pre-readings: [LU factorizations]({% link notes/solving_linear_systems/lu_factorizations.md %})
-: Class worksheet: coming by Sept 6
+: [Class worksheet]({% link worksheets/6.md %})
+
+Sep 14
+: Geometry of linear systems
+  : 
+: Pre-readings: coming by Sep 10
+: Class worksheet: coming by Sep 10 
+: [**HW 3 due**]({% link homework/3.md %}){: .label .label-red }
 
 <!-- Oct 1
 : **Lab**{: .label .label-purple } [Intro to Java](#)
