@@ -58,7 +58,7 @@ What can we say about the set
 $$
     \mathcal R(A) := \lbrace \mathbf{b} \mid A\mathbf{x} = \mathbf{b} \text { is solvable} \rbrace \ ?
 $$
-It, itself, is the solution set of a different linear system!
+This set is called the _range_ of $A$. It, itself, is the solution set of a different linear system!
 
 ### Equations on the inhomogeneous term
 

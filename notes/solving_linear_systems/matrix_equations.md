@@ -70,6 +70,7 @@ we set
 $$
     \mathcal Z(A) = \mathcal Z(A \mid \mathbf{0}).
 $$
+The set $\mathcal Z(A)$ is often called the _null space_ of $A$. (Hence you will see the notation $\mathcal N(A)$ elsewhere.)
 
 Our next task is to understand how we can enhance our understanding of solutions of linear systems 
 by using matrices. We will study which [operations]({% link notes/solving_linear_systems/row_operations.md %}) on (augmented) matrices can simplify the 
