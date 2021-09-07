@@ -60,7 +60,7 @@ $$
 $$
 This set is called the _range_ of $A$. It, itself, is the solution set of a different linear system!
 
-### Equations on the inhomogeneous term
+### Ranges as null spaces
 
 Let's see how this works in an example. For general $\mathbf{b}$, let's use Gaussian Elimination to 
 simplify the system:
@@ -133,3 +133,100 @@ take $B$ to be the coefficient matrix for the system given by all the zero rows.
 If $(A^\prime \mid b^\prime)$ is the resulting matrix in row echelon form, then 
 - each $b_i^\prime$ is a linear combination of the original $b_j$
 - and $b_i^\prime = 0$ must be satisfied for each zero row $\mathbf{R}_i^{A^\prime}$. 
+
+### Null spaces as ranges
+
+The previous Theorem says that any range can be written as null space of a (possibly) different matrix. 
+The converse is also true. Any null space can be written as a range. Let's see why. 
+
+Recall that using Gaussian Elimination to achieve reduced row echelon form allows us to identify a set 
+of free variables and bound variables for the system $(A \mid 0)$. 
+
+For simplicity of notation let's permute the columns of the matrix so that $x_1, \ldots, x_r$ are the 
+bound variables and $x_{r+1}, \ldots, x_n$ are the free variables. 
+
+If $A^\prime$ is the reduced row echelon form of $A$, then let $C$ be the matrix obtained by deleting the 
+zero rows and the columns containing the pivots for each non-zero. 
+
+The parametric solution to the system is obtained by as 
+$$
+    \begin{aligned}
+        x_1 & = -C_{1(r+1)} x_{r+1} - \cdots - C_{1n} x_n \\
+        x_2 & = -C_{2(r+1)} x_{r+1} - \cdots - C_{2n} x_n \\
+        & \vdots \\
+        x_r & = -C_{r(r+1)} x_{r+1} - \cdots - C_{rn} x_n
+    \end{aligned}
+$$
+
+Consider the $n \times (n-r)$-matrix obtained by stacking the $(n-r) \times (n-r)$ identity matrix underneath $-C$. 
+So
+$$
+    B =
+    \begin{pmatrix} 
+        -C \\ 
+        I_{n-r} 
+    \end{pmatrix}
+$$
+
+Let's see that $B$ is the matrix we seek. We want to check that $\mathcal R(B) = \mathcal Z(A)$. 
+
+Let's suggestively write the input variables to $B$ as $y_{n-r},\ldots,y_n$. Then, using the definition of 
+matrix multiplication, writing out $B \mathbf{y}$ gives 
+$$
+    \begin{aligned}
+        x_1 & = -C_{1(r+1)} y_{r+1} - \cdots - C_{1n} y_n \\
+        x_2 & = -C_{2(r+1)} y_{r+1} - \cdots - C_{2n} y_n \\
+        & \vdots \\
+        x_r & = -C_{r(r+1)} y_{r+1} - \cdots - C_{rn} y_n \\
+        x_{r+1} & = y_{r+1} \\
+        x_{r+2} & = y_{r+2} \\
+        & \vdots \\
+        x_n & = y_n
+    \end{aligned}
+$$
+which reduces to the equations above if we eliminate $y_i$ using $x_i = y_i$. 
+
+We have established that every null space can be written as range.
+
+**Theorem**. For any matrix $A$, there exists another matrix $B$ with 
+$$
+    \mathcal Z(A) = \mathcal R(B).
+$$
+
+Let's see this in an example.
+$$
+    A = 
+    \begin{pmatrix}
+        1 & -1 & 0 & 0 \\
+        0 & 2 & -1 & 1 \\
+        1 & 1 & 0 & 1 
+    \end{pmatrix}
+$$
+Converting $A$ to reduced row echelon form gives 
+$$
+    A = 
+    \begin{pmatrix}
+        1 & 0 & 0 & 1/2 \\
+        0 & 1 & 0 & 1/2 \\
+        0 & 0 & 1 &  0
+    \end{pmatrix}
+$$
+We don't have rearrange any of the columns of $A$. The only free variable is $x_4$ and 
+$$
+    C = 
+    \begin{pmatrix} 
+        1/2 \\
+        1/2 \\
+        0 
+    \end{pmatrix}
+$$
+so 
+$$
+    B = 
+    \begin{pmatrix} 
+        -1/2 \\
+        -1/2 \\
+        0 \\
+        1
+    \end{pmatrix}
+$$

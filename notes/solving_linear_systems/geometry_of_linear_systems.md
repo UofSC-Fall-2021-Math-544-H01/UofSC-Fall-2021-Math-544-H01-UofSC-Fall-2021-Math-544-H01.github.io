@@ -6,7 +6,7 @@ has_children: false
 has_toc: false
 parent: Solving Linear Systems
 grand_parent: Notes
-work_in_progress: true 
+work_in_progress: false 
 ---
 
 {% if page.work_in_progress %}
@@ -117,14 +117,3 @@ In the former case, we could end up with $-1$ free variables corresponds to no s
 
 In the second case, we know that any solution to the new linear equation was already a solution to the existing 
 system. There is some redundancy in our system of equations. 
-
-### Similar things that are not same
-
-At this point, we have constructed a number of objects that feel similar:
-- The space $\mathbb{R}^n$. 
-- The null space $\mathcal Z(A)$ of a matrix. 
-- The range $\mathcal R(A)$ of a matrix. 
-
-Geometrically, they all correspond to hyperplanes in $\mathbb{R}^n$ and they all share similar properties. 
-
-For example, let's say that  

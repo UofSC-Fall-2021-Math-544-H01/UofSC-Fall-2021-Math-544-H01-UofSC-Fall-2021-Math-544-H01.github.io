@@ -52,10 +52,10 @@ Sept 9
 : Pre-readings: [LU factorizations]({% link notes/solving_linear_systems/lu_factorizations.md %})
 : [Class worksheet]({% link worksheets/6.md %})
 
-Sep 14
+Sept 14
 : Geometry of linear systems
   : 
-: Pre-readings: coming by Sep 10
+: [Pre-reading]({% link notes/solving_linear_systems/geometry_of_linear_systems.md %})
 : Class worksheet: coming by Sep 10 
 : [**HW 3 due**]({% link homework/3.md %}){: .label .label-red }
 

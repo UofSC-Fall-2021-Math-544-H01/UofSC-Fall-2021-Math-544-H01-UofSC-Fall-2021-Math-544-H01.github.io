@@ -3,8 +3,8 @@ title: Sage
 ended: false
 ---
 
-Sep 16
+Sept 16
 : Sage
   : 
-: Pre-readings: coming by Sep 13
+: [Pre-reading]({% link notes/sage.md %})
 : Class worksheet: coming by Sep 13
