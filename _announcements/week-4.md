@@ -4,8 +4,8 @@ week: 4
 date: 2021-09-06
 ---
 
-* The first versions of Homework 1, Quiz 3, and Quiz 4 were returned on Friday. The due for revisions is this Friday, Sept 10. 
-The first revisions for Quiz 1 and Quiz 2 were returned on Monday. The due date for the second (and final) revisions is 
+* The first versions of Homework 1, Quiz 3, and Quiz 4 were returned on Friday. They due for revisions is this Friday, Sept 10. 
+The first revisions for Quiz 1 and Quiz 2 were returned on Monday. The due date for the second (and final) revision of Quiz 2 is 
 next Monday Sept 13. 
 
 * Reminder: all returned individual work will be put in the UofSC OneDrive folder shared personally with me. Each group 
