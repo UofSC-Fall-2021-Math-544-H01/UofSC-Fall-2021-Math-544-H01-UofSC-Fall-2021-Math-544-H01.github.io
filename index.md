@@ -13,8 +13,12 @@ seo:
 {: .fs-6 .fw-300 }
 
 {% if site.announcements %}
+{% assign announce_date = site.announcements.last.date | date: '%s' | plus: 604800 %}
+{% assign today_date = 'now' | date: '%s' | times: 1 %}
+{% if announce_date > today_date %}
 {{ site.announcements.last }}
 [Announcements](announcements.md){: .btn .btn-outline .fs-3 }
+{% endif %}
 {% endif %}
 
 ## Syllabus 
