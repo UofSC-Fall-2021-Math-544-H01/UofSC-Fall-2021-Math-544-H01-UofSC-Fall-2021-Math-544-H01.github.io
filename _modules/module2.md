@@ -7,4 +7,4 @@ Sept 16
 : Sage
   : 
 : [Pre-reading]({% link notes/sage.md %})
-: Class worksheet: coming by Sep 13
+: [Class worksheet]({% link worksheets/8.md %})

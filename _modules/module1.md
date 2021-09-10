@@ -56,7 +56,7 @@ Sept 14
 : Geometry of linear systems
   : 
 : [Pre-reading]({% link notes/solving_linear_systems/geometry_of_linear_systems.md %})
-: Class worksheet: coming by Sep 10 
+: [Class worksheet]({% link worksheets/7.md %}) 
 : [**HW 3 due**]({% link homework/3.md %}){: .label .label-red }
 
 <!-- Oct 1
