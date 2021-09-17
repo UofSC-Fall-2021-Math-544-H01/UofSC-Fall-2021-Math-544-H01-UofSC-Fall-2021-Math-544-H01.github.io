@@ -169,3 +169,73 @@ $$
     x \mapsto cf(x)
 $$
 The element $0$ is the constant function with value $0$. 
+
+### Consequences of the definition 
+
+Some facts are true for a general vector space because they follow logically from the definition. 
+
+One consequence is that the element $-v$ that satisfies $v + (-v) = 0$ is 
+uniquely determined by $v$. As such, the notation $-v$ (implicitly saying it 
+only depends on $v$) is sensible.
+
+**Lemma**. Let $V$ be a vector space and $v \in V$. If 
+$$
+    v + w = 0 = v + w^\prime
+$$
+then $w = w^\prime$.
+
+<details markdown="block">
+<summary>
+<b>Proof</b>. (Expand to view)
+</summary> 
+
+Consider $v + w + w^\prime$. Using the axioms of a vector space, 
+we can rewrite it as
+$$
+    v + w + w^\prime = (v+w) + w^\prime = 0 + w^\prime = w^\prime
+$$
+but we can also rewrite it as 
+$$
+    v + w + w^\prime = v + w^\prime + w = \cdots = w
+$$
+where $\cdots$ we do the same manipulation as previously. Thus
+$w = w^\prime$.  <span style="float:right;"> &#9632; </span>
+
+</details>
+
+We know the following facts.  
+
+**Lemma**. Let $V$ be a vector space. Then 
+- $0 \cdot v = 0$ for any $v \in V$
+- $c \cdot 0 = 0$ for any $c \in k$, and 
+- $(-1) \cdot v = -v $ for any $v \in V$. 
+
+<details markdown="block">
+<summary>
+<b>Proof</b>. (Expand to view)
+</summary> 
+
+Take a vector $v \in V$. Then, we know that 
+$$
+    0 \cdot v = (0+0) \cdot v = 0 \cdot v + 0 \cdot v
+$$
+We know that we can talk about subtracting since for any $v$ there is 
+some other $-v$ with $v + (-v) = 0$. Subtracting $0 \cdot v$ leaves 
+$$
+    0 = 0 \cdot v
+$$
+as desired. 
+
+Similarly, 
+$$
+    c \cdot 0 = c \cdot (0 + 0) = c \cdot 0 + c \cdot 0 
+$$
+so $c \cdot 0 = 0$. 
+
+Finally, 
+$$
+    0 = 0 \cdot v = (1-1) \cdot v = 1 \cdot v + (-1) \cdot v = v + (-1) \cdot v
+$$
+for any $v \in V$. <span style="float:right;"> &#9632; </span>
+
+</details>
