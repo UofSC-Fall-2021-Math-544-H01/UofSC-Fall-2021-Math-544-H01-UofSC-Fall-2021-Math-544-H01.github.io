@@ -218,11 +218,11 @@ $$
 for scalars $a_i \in \mathbb{R}$. The _degree_ of $p(x)$ is the largest $a_i$ that is 
 nonzero. 
 
-    Let $\operatorname{Poly}_d(\mathbb{R},\mathbb{R})$ be \
+    Let $\operatorname{Poly}_d(\mathbb{R})$ be \
     the subset of polynomial functions in $\operatorname{Func}(\mathbb{R},\mathbb{R})$ of 
     degree $\leq d$. 
 
-    Let's check that $\operatorname{Poly}_d(\mathbb{R},\mathbb{R})$ is a subspace. Given 
+    Let's check that $\operatorname{Poly}_d(\mathbb{R})$ is a subspace. Given 
     $$
         \begin{aligned}
             p(x) & = a_d x^d + a_{d-1} x^{d-1} + \cdots a_1 x + a_0 \\
@@ -236,7 +236,7 @@ nonzero.
     is also a polynomial of degree at most $d$ whose coefficients are the linear combination of the coefficients of 
     each. 
 
-    More generally, if we let $\operatorname{Poly}(\mathbb{R},\mathbb{R})$ be the set of all 
+    More generally, if we let $\operatorname{Poly}(\mathbb{R})$ be the set of all 
     polynomial functions, it is also a subspace via the exact same argument. 
 
 - A square matrix $A$ is _anti-symmetric_ if $A^T = -A$. So for example, 
