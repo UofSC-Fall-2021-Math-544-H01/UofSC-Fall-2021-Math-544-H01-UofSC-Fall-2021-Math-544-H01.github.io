@@ -127,7 +127,7 @@ $$
 $$
 
 Like with scaling a row, we want to _undo_ multiplication by $L(i,j,c)$. In 
-[Worksheet 2]({% link worksheets/2.md %}), 
+[Worksheet 2]({% link worksheets/02.md %}), 
 you will see that if $i \neq j$, then  
 $$
 	L(i,j,c) L(i,j,-c) = I 

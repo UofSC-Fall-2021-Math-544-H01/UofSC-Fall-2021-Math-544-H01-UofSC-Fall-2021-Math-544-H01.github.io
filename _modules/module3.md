@@ -8,11 +8,12 @@ Sept 21
   : 
 : Pre-reading: [fields]({% link notes/vector_spaces/fields.md %}), 
 [vector spaces]({% link notes/vector_spaces/def_egs.md %})
-: [Worksheet] ({% link worksheets/9.md %})
-: [**HW 4 due**]({% link homework/4.md %}){: .label .label-red }
+: [Worksheet]({% link worksheets/09.md %})
 
 Sept 23
-: Subspaces 
+: Subspaces and spans
   : 
 : Pre-reading: [subspaces]({% link notes/vector_spaces/subspaces.md %}), 
-: [Worksheet] ({% link worksheets/10.md %})
+[spans and spanning sets]({% link notes/vector_spaces/spans.md %})
+: [Worksheet]({% link worksheets/10.md %})
+: [**HW 4 due**]({% link homework/04.md %}){: .label .label-red }

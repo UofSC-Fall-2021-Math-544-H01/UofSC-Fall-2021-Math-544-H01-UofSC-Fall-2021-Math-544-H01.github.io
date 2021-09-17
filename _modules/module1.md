@@ -1,6 +1,6 @@
 ---
 title: Solving Linear Systems
-ended: false
+ended: true
 ---
 
 Aug 24
@@ -12,7 +12,7 @@ Aug 24
 [vectors]({% link notes/solving_linear_systems/vectors.md %}), 
 [matrices]({% link notes/solving_linear_systems/matrices.md %}),
 [matrix equations]({% link notes/solving_linear_systems/matrix_equations.md %})
-: [Class worksheet]({% link worksheets/1.md %})
+: [Class worksheet]({% link worksheets/01.md %})
 
 Aug 26
 : Row reduction and reduced row echelon form
@@ -21,7 +21,7 @@ Aug 26
 [row echelon form]({% link notes/solving_linear_systems/row_echelon_form.md %}),
 [row operations]({% link notes/solving_linear_systems/row_operations.md %}),
 [row operations and solutions to linear systems]({% link notes/solving_linear_systems/effect_on_solutions.md %})
-: [Class worksheet]({% link worksheets/2.md %})
+: [Class worksheet]({% link worksheets/02.md %})
 
 Aug 31 
 : Gaussian elimination
@@ -29,35 +29,35 @@ Aug 31
 : Pre-readings: 
 [the algorithm]({% link notes/solving_linear_systems/gaussian_elimination.md %}), 
 [solving systems in row echelon form]({% link notes/solving_linear_systems/solving_echelon_systems.md %})
-: [Class worksheet]({% link worksheets/3.md %})
-: [**HW 1 due**]({% link homework/1.md %}){: .label .label-red }
+: [Class worksheet]({% link worksheets/03.md %})
+: [**HW 1 due**]({% link homework/01.md %}){: .label .label-red }
 
 Sept 2
 : Invertibility
   : 
 : Pre-readings: 
 [invertibility]({% link notes/solving_linear_systems/invertibility.md %})
-: [Class worksheet]({% link worksheets/4.md %})
+: [Class worksheet]({% link worksheets/04.md %})
 
 Sept 7 
 : Equations for solvable systems
   : 
 : Pre-readings: [equations for solvability]({% link notes/solving_linear_systems/equations_for_solvable_systems.md %})
-: [Class worksheet]({% link worksheets/5.md %})
-: [**HW 2 due**]({% link homework/2.md %}){: .label .label-red }
+: [Class worksheet]({% link worksheets/05.md %})
+: [**HW 2 due**]({% link homework/02.md %}){: .label .label-red }
 
 Sept 9 
 : LU factorizations
   : 
 : Pre-readings: [LU factorizations]({% link notes/solving_linear_systems/lu_factorizations.md %})
-: [Class worksheet]({% link worksheets/6.md %})
+: [Class worksheet]({% link worksheets/06.md %})
 
 Sept 14
 : Geometry of linear systems
   : 
 : [Pre-reading]({% link notes/solving_linear_systems/geometry_of_linear_systems.md %})
-: [Class worksheet]({% link worksheets/7.md %}) 
-: [**HW 3 due**]({% link homework/3.md %}){: .label .label-red }
+: [Class worksheet]({% link worksheets/07.md %}) 
+: [**HW 3 due**]({% link homework/03.md %}){: .label .label-red }
 
 <!-- Oct 1
 : **Lab**{: .label .label-purple } [Intro to Java](#)

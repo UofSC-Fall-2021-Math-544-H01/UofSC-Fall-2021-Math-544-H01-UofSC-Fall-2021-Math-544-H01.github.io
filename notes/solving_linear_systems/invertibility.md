@@ -147,9 +147,9 @@ We have already seen some examples of invertible matrices in our pursuit
 of Gaussian Elimination: $S(i,c), P(i,j), L(i,j,c)$.
 
 We also know that we can undo multiplication by each of these matrices:
-- $S(i,c) S(i,1/c) = I$ from [Homework 2]({% link homework/2.md %})
-- $P(i,j) P(j,i) = I$ from [Homework 1]({% link homework/1.md %})
-- $L(i,j,c) L(i,j,-c) = I$ from [Worksheet 2]({% link worksheets/2.md %})
+- $S(i,c) S(i,1/c) = I$ from [Homework 2]({% link homework/02.md %})
+- $P(i,j) P(j,i) = I$ from [Homework 1]({% link homework/01.md %})
+- $L(i,j,c) L(i,j,-c) = I$ from [Worksheet 2]({% link worksheets/02.md %})
 
 Rewriting the previous statements in the new notation says
 - $S(1,c)^{-1} = S(1,1/c)$ if $c \neq 0$
@@ -217,7 +217,7 @@ $$
     E_1^{-1} \cdots E_t^{-1} I = A
 $$
 Since $A$ is a product of invertible matrices, it is also invertible. This fact is 
-part of your [homework]({% link homework/2.md%}).
+part of your [homework]({% link homework/02.md%}).
 
 Now, assume $A$ is invertible and let $A^\prime$ be the result of using Gaussian 
 Elimination to produce a matrix in reduced row echelon form. As above, we know 
@@ -226,7 +226,7 @@ $$
     A^\prime = E_t E_{t-1} \cdots E_1 A 
 $$
 and so that $A^\prime$ must also be invertible. Also part of your 
-[homework]({% link homework/2.md%}) is to prove that the only invertible matrix 
+[homework]({% link homework/02.md%}) is to prove that the only invertible matrix 
 in reduced row echelon form is $I$. 
 
 Let's turn to proving the second statement. Assume that we can reduce 

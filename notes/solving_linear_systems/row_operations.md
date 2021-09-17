@@ -54,7 +54,7 @@ $$
 	\end{pmatrix}
 $$
 
-As part of [Homework 1]({% link homework/1.md %}), 
+As part of [Homework 1]({% link homework/01.md %}), 
 you will need to verify the following fact: 
 
 **Lemma**: For any $m \times n$ matrix $A$, the product $B := S(l,c)_m A$ is a 
@@ -108,14 +108,14 @@ $$
 	P(i,j)_m = I_m - D(i,i) - D(j,j)+ D(j,i) + D(i,j) 
 $$
 where $I\_m$ is the $m \times m$ identity matrix and $D(i,j)$ is matrix described in 
-[Worksheet 2]({% link worksheets/2.md %})
+[Worksheet 2]({% link worksheets/02.md %})
 
 So 
 $$
 	P(i,j) B = B - D(i,i) B - D(j,j) B + D(i,j) B + D(i,j) B
 $$
 
-From the [Homework 1]({% link homework/1.md %}), we know that $D(i,j) B$ 
+From the [Homework 1]({% link homework/01.md %}), we know that $D(i,j) B$ 
 is the matrix whose which is $0$ 
 except for the i-th row which is equal to the j-th row of $B$.  So reading 
 $$

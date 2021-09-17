@@ -1,10 +1,10 @@
 ---
 title: Sage
-ended: false
+ended: true
 ---
 
 Sept 16
 : Sage
   : 
 : [Pre-reading]({% link notes/sage.md %})
-: [Class worksheet]({% link worksheets/8.md %})
+: [Class worksheet]({% link worksheets/08.md %})
