@@ -17,3 +17,16 @@ Sept 23
 [spans and spanning sets]({% link notes/vector_spaces/spans.md %})
 : [Worksheet]({% link worksheets/10.md %})
 : [**HW 4 due**]({% link homework/04.md %}){: .label .label-red }
+
+Sept 28
+: Linear independence
+  : 
+: Pre-reading: coming by September 24
+: Worksheet: coming by September 24
+: [**HW 5 due**]({% link homework/05.md %}){: .label .label-red }
+
+Sept 30
+: Bases and dimension
+  : 
+: Pre-reading: coming by September 24
+: Worksheet: coming by September 24

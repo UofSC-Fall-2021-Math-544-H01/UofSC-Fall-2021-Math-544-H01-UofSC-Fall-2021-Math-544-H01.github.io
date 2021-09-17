@@ -171,7 +171,13 @@ let $d_i$ be the degree of $p_i$ and let $d = \max d_i$.
 ### Spanning sets for null spaces 
 
 We have seen that null spaces can be written as ranges. Therefore they have spanning sets. But, how do 
-we compute one? Let's take the example of 
+we compute one? In general, we have the following.
+
+**Proposition**. The null space will be spanned by $d$ vectors where $d$ is the number of free 
+variables in row echelon form. To get a spanning set, we can write the general parametric solution 
+for system and evaluate $d$ times by setting each free variable to $1$ and all the others to $0$. 
+
+A proof will be part of your [homework]({% link homework/05.md %}) but for now let's take the example of 
 $$
     A = 
     \begin{pmatrix}
@@ -235,9 +241,3 @@ $$
         1 
     \end{pmatrix}
 $$
-
-In general, we have the following.
-
-**Proposition**. The null space will be spanned by $d$ vectors where $d$ is the number of free 
-variables in row echelon form. To get a spanning set, we can write the general parametric solution 
-for system and evaluate $d$ times by setting each free variable to $1$ and all the others to $0$. 
