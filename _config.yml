@@ -95,6 +95,7 @@ compress_html:
 
 kramdown:
   math_engine: nil
+#  parse_block_html: true
 
 plugins:
   - jekyll-seo-tag

@@ -15,31 +15,59 @@ work_in_progress: true
 
 ## Subspaces
 
+One of most common ways to make new vector spaces out of old ones is take a known vector 
+space $V$ and find a subset $W$ that inherits the vector space structure from $V$. 
 
-
-**Lemma**. Suppose that $V$ is a $k$-vector space and $W$ is a subset of $V$. Then $W$ (with its addition and scalar 
-multiplication inherited from $V$) is also a $k$-vector space if and only if $W$ is closed under addition and 
-scalar multiplication, ie for any $w_1,w_2 \in W$, we have $w_1 + w_2 \in W$ and for any $c \in k$ and $w \in W$, we 
-have $cw \in W$. 
-
-**Proof**. Part of being a vector space is that $+ : W \times W \to W$ and $\cdot: k \times W \to W$ are well 
-defined functions. We can add two elements of $W$ and output of will still be an element of $W$. Similarly, we 
-can scale an element of $W$ and still have an element of $W$. So being closed under addition has to hold if $W$ 
-is a $k$-vector space. 
-
-In the other direction, since $V$ is a vector space itself, we know the 
-[list]({% link notes/vector_spaces/def_egs.md %}#Definition) of conditions has to be satisfied already. For example, 
-for $w_1,w_2 \in W$, since $W \subseteq V$ we know that $w_1 + w_2 = w_2 + w_1$ will hold. 
-
-If for any $w_1,w_2 \in W$, we have $w_1 + w_2 \in W$ and for any $c \in k$ and $w \in W$, we 
-have $cw \in W$, the functions
+**Definition**. A _subspace_ $W$ of a $k$-vector space $V$ is a subset $W \subseteq V$ satisfying 
+the conditions that
+- $W$ is _closed under addition_: for any two vectors, their sum is in $W$, ie
 $$
-    \begin{aligned}
-        + : W \times W & \to W \\
-        \cdot : k \times W & \to W
-    \end{aligned}
+    w_1,w_2 \in W \Rightarrow w_1 + w_2 \in W
+$$ 
+- $W$ is _closed under scaling_: for any scalar $c \in k$ and any vector $w \in W$, scaling $w$ by 
+$c$ is also in $W$, ie
 $$
-land back in $W$. Now, we check the conditions for $W$ to be a vector space itself. 
+    c \in k, \ w \in W \Rightarrow c \cdot w \in W.
+$$
+
+Notice that the definition of a subspace did not say it is a vector space! That is a consequence of 
+the definition.
+
+**Proposition**. Suppose that $V$ is a $k$-vector space and $W$ is a subset of $V$. If $W$ is a 
+subspace, then $W$ with addition and scaling inherited from $V$ is also a vector space. 
+
+
+
+<details>
+<summary>
+Expand for the proof. 
+</summary>
+
+**Proof**. Let's try to spell out what "addition and scaling inherited from $V$" is precisely. 
+
+Recall that the condition that $W$ is closed under $+$ means that for any pair of vectors 
+$w_1, w_2 \in W$, their sum $w_1 + w_2 \in W$. We say vectors here because we are implicitly viewing 
+$w_1, w_2 \in V$ via the inclusion $W \subseteq V$. This is the only way to make sense of the 
+expression $w_1 + w_2$. The content of being closed under $+$ is the statement that the element 
+$w_1 + w_2 \in V$ actually lies back in the subset $W$. 
+
+We can succinctly capture this by saying that 
+$$
+    + : W \times W \to W 
+$$
+is a well-defined function. In particular, its codomain is actually what we claim it to be: $W$. This 
+is the addition inherited from $V$. 
+
+Similarly, if we take $w \in W$ view it as an element of $V$ and scale it, then the result actually 
+still lies in $W$. 
+$$
+    \cdot : k \times W \to W
+$$
+is also a well-defined function. This is the scalar multiplication inherited from $V$. 
+
+With that exposition out of the way, let's check that $W$ satisfies the 
+[conditions]({% link notes/vector_spaces/def_egs.md %}#Definition) for being a 
+vector space one by one. 
 - $+$ is a associative: $(w_1+w_2)+w_3 = w_1+(w_2+w_3)$. 
 
     Since each $w_i \in V$ and this holds for all elements of $V$ by assumption, we are good. 
@@ -98,3 +126,5 @@ $$
 
     Again, since this is true for all elements of $V$ and $W \subseteq V$, it is true for all elements of $W$. 
     $\blacksquare$
+
+</details>

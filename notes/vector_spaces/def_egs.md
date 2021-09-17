@@ -6,7 +6,7 @@ has_children: false
 has_toc: false
 parent: Vector spaces
 grand_parent: Notes
-work_in_progress: true
+work_in_progress: false
 ---
 
 {% if page.work_in_progress %}
@@ -133,7 +133,7 @@ indeed have a vector space, we need to check that:
     $$
     if $A \mathbf{v} = \mathbf{0}$. 
 
-    This example is a case of [more general statement]({% link notes/vector_spaces/subspaces.md %}). 
+    This example is a case of [more general statement about subspaces]({% link notes/vector_spaces/subspaces.md %}). 
 
 - We can contrast the previous example with the case of $\mathcal Z(A \mid \mathbf{b})$ for 
 $\mathbf{b} \neq \mathbf{0}$. Consider $x+y = 1$. Then, $(1 \ 0)^T$ is a solution but 
@@ -142,9 +142,11 @@ $2 (1 \ 0)^T = (2 \ 0)$ is not!
     Solutions to the homogeneous system $A \mathbf{x} = \mathbf{0}$, ie null spaces, are vector spaces but 
     solutions to an inhomogeneous system are never vector spaces. 
 
-- We know that $\mathcal R(A)$ is a vector space since we 
+- Ranges are also vector spaces. For any matrix $A$, we 
 [know]({% link notes/solving_linear_systems/equations_for_solvable_systems.md %}) there is another 
-matrix $B$ with $\mathcal R(A) = \mathcal Z(B)$. 
+matrix $B$ with $\mathcal R(A) = \mathcal Z(B)$. As we just saw, $\mathcal Z(B)$ is a vector space. 
+We will see more directly that ranges are vector spaces when we talk about 
+[spans]({% link notes/vector_spaces/spans.md %}). 
 
 - Let $\operatorname{Mat}_{m,n}(k)$ be the set of $m \times n$ matrices with entries in the field $k$. 
 This is a $k$-vector space with matrix addition and scalar multiplication. 
@@ -153,17 +155,17 @@ This is a $k$-vector space with matrix addition and scalar multiplication.
 $$
     \operatorname{Fun}(\mathbb{R},\mathbb{R}) = \lbrace f: \mathbb{R} \to \mathbb{R} \rbrace
 $$
-be the set of all real-valued functions of one variable with domain all of $x$. Some examples of elements 
+be the set of all real-valued functions of one variable with domain all of $\mathbb{R}$. Some examples of elements 
 include 
 $$
     e^x, \ 5x^5 + 4x^4 + 3x^3 + 2x^2 + x + 1, \ \frac{1}{1+x^2}, \sin(x),\ldots
 $$
-This is a $\mathbf{R}$-vector space with 
+This is a $\mathbb{R}$-vector space with the sum of functions $f+g$ given by 
 $$
-    (f+g)(x) := f(x) + g(x) 
+    x \mapsto f(x) + g(x) 
 $$
-and scalar multiplication 
+and scalar multiplication $cf$ by 
 $$
-    (cf)(x) := cf(x)
+    x \mapsto cf(x)
 $$
 The element $0$ is the constant function with value $0$. 
