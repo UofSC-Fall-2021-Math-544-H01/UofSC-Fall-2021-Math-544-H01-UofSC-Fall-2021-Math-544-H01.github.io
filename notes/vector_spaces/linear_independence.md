@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Bases and dimension
-nav_order: 6
+title: Linear independence
+nav_order: 5
 has_children: false
 has_toc: false
 parent: Vector spaces
@@ -13,4 +13,4 @@ work_in_progress: true
     WORK IN PROGRESS
 {% endif %}
 
-## Bases and dimension
+## Linear independence
