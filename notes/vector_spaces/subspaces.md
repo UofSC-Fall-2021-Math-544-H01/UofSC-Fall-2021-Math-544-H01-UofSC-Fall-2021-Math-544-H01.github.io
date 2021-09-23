@@ -265,7 +265,7 @@ $$
     $d/dx$ satisfies 
     $$
         \frac{d}{dx}(f+g) = \frac{df}{dx} + \frac{dg}{dx} \\
-        \frac{d}{dx})(cf) = c \frac{df}{dx}. 
+        \frac{d}{dx}(cf) = c \frac{df}{dx}. 
     $$
 
     Thus, 
