@@ -21,12 +21,25 @@ Sept 23
 Sept 28
 : Linear independence
   : 
-: Pre-reading: coming by September 24
-: Worksheet: coming by September 24
+: [Pre-reading]({% link notes/vector_spaces/linear_independence.md %})
+: [Worksheet]({% link worksheets/11.md %})
 : [**HW 5 due**]({% link homework/05.md %}){: .label .label-red }
 
 Sept 30
 : Bases and dimension
   : 
-: Pre-reading: coming by September 24
-: Worksheet: coming by September 24
+: [Pre-reading]({% link notes/vector_spaces/bases.md %})
+: [Worksheet]({% link worksheets/12.md %})
+
+Oct 5
+: Rank
+  : 
+: [Pre-reading]({% link notes/vector_spaces/rank.md %})
+: [Worksheet]({% link worksheets/13.md %})
+: [**HW 6 due**]({% link homework/06.md %}){: .label .label-red }
+
+Oct 7
+: Inner products
+  : 
+: [Pre-reading]({% link notes/vector_spaces/inner_products.md %})
+: [Worksheet]({% link worksheets/14.md %})
