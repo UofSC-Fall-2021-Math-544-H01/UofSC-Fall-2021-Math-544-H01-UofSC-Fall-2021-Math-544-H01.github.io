@@ -117,9 +117,9 @@ $$
 $$
 from $\operatorname{Span}(S)$ and we can eliminate $v_j$ by substituting in (*). We get 
 $$
-    \sum_{w \in S} a_w w = \sum_{w \neq v_i} a_w a_w + \sum_{i \neq j} \left( a_i - v_j \frac{c_}{c_j} \right)v_i
+    \sum_{w \in S} a_w w = \sum_{w \neq v_i} a_w w + \sum_{i \neq j} \left( a_i - a_j \frac{c_i}{c_j} \right)v_i
 $$
-The right hand side is a linear combination of $v_i$ for $i \neq j$. Thus, 
+The right hand side is a linear combination of vectors from $S\setminus \lbrace v_j \rbrace$. Thus, 
 $$
     \sum_{w \in S} a_w w  \in \operatorname{Span}(S \setminus \lbrace v_j \rbrace)
 $$
@@ -179,7 +179,7 @@ we first apply the induction hypothesis $v_1, \ldots, v_{s-1}$. To do so, we nee
 $\operatorname{Span}(v_1,\ldots,v_{s-1}) \neq \lbrace 0 \rbrace$ or give a separate proof in 
 that case. 
 
-Assume that $c = \lbrace 0 \rbrace$. Then $v_i = 0$ for 
+Assume that $\operatorname{Span}(v_1,\ldots,v_{s-1}) = \lbrace 0 \rbrace$. Then $v_i = 0$ for 
 each $1 \leq i \leq s-1$. Otherwise, $v_i \in \operatorname{Span}(v_1,\ldots,v_{s-1})$ would be a 
 nonzero vector. 
 
@@ -254,7 +254,7 @@ a free variable and thus nonzero zero solutions to $Ax = 0$.
 {% include endproof.html %}
 
 Is there an effective way to find a spanning set for the span of $v_1,\ldots,v_s$ 
-in $k^m$? As is often the case, the answer is Gaussian elimination but now 
+in $k^m$? Again, the answer is Gaussian elimination but now 
 with a twist (or transpose). 
 
 The span of set of vectors remains unchanged under the three classes of row operations. 
@@ -283,7 +283,7 @@ $$
 $$
 This is immediately a linear combination of the vectors from $S$: 
 $$
-    c_1 v_1 + \cdots + (c_ic)v_i) + \cdots + c_sv_s \in \operatorname{Span}(S)
+    c_1 v_1 + \cdots + (c_ic)v_i + \cdots + c_sv_s \in \operatorname{Span}(S)
 $$
 Therefore, 
 $$
@@ -315,8 +315,7 @@ $$
     \operatorname{Span}(S^\prime) \subseteq \operatorname{Span}(S).
 $$
 Since we can obtain $S$ from $S^\prime$ by replacing $v_i - cv_j$ by 
-$(v_i - cv_j) + cv_j = v_i$, we have already shown 
-know that 
+$(v_i - cv_j) + cv_j = v_i$, we have already shown that 
 $$
     \operatorname{Span}(S) \subseteq \operatorname{Span}(S^\prime)
 $$
@@ -325,7 +324,7 @@ $$
     \operatorname{Span}(S) = \operatorname{Span}(S^\prime). 
 $$
 {% include endproof.html %}
-
+<br>
 To perform Gaussian elimination, we just systematically apply row operations. 
 
 **Corollary**. Given a matrix $A$, the span of the row vectors does not change 
@@ -350,18 +349,18 @@ all the rows of $A^\prime$ from the induction hypothesis.
 
 Assume we have a relation 
 $$
-    \sum_i c_i \mathbf{R}_A^i = 0 \tag(**)
+    \sum_i c_i \mathbf{R}_A^i = 0 \tag{$\star$}
 $$
 Let $p$ be the column number of the pivot in row one. Then,
 $$
-    (\mathbf{R}_A^i) = A_{ip} = 0
+    (\mathbf{R}_A^i)_p = A_{ip} = 0
 $$
-by definition of row echelon form. Thus, if we take the $p$-th component of 
-(**) we are only left with 
+for $i \neq 1$, by definition of row echelon form. Thus, if we take the $p$-th component of 
+($\star$) we are only left with 
 $$
     c_1 A_{1p} = 0
 $$
-As this is the pivot $A_{1p} \neq 0$, so $c_1 = 0$. Thus, (**) is a linear 
+As this is the pivot $A_{1p} \neq 0$, so $c_1 = 0$. Thus, ($\star$) is a linear 
 relation amongst the other rows. We have already shown this must be the zero. 
 {% include endproof.html %}
 

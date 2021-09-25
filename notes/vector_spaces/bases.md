@@ -19,8 +19,6 @@ In the our [discussion]({% link notes/vector_spaces/linear_independence.md %})
 of linear independence, we said the phrase "linearly independent spanning set" 
 often. 
 
-Indeed, it provides a non-redundant way of accessing all vectors in a vector space. 
-
 Given the importance, we name it.
 
 **Definition**. A _basis_ for a vector space $V$ is a linearly independent spanning 
@@ -45,7 +43,7 @@ written as a linear combination of them.
 
 Assume that we can write $v$ in two ways 
 $$
-    \sum_{i \in S} a_i v_i = v = \sum_{i \in I} c_i v_i
+    \sum_{i \in S} a_i v_i = v = \sum_{i \in S} c_i v_i
 $$
 Then, taking the difference we have a linear relation
 $$
@@ -166,7 +164,7 @@ $$
 {% include beginproof.html %}
 Notice that 
 $$
-    v_i = (BA)_{1j}v_1 + \cdots + (BA)_{nj}v_n
+    v_i = (BA)_{1i}v_1 + \cdots + (BA)_{ni}v_n
 $$
 As $v_1,\ldots,v_n$ are linearly independent, we must have 
 $$
@@ -306,7 +304,7 @@ row echelon form.
     Let $B$ be the matrix whose columns are the $v_i$. Notice that up to permuting the 
     rows of $B$ we can write $B$ as 
     $$
-        \begin{pmatrix} B^\prime & I \end{pmatrix}
+        \begin{pmatrix} B^\prime \\ I \end{pmatrix}
     $$
 
     Assume we had a relation 
@@ -352,7 +350,7 @@ row echelon form.
 form for $A^T$. 
 
     We [saw]({% link notes/vector_spaces/spans.md%}#linear-dependence-and-matrices) 
-    that row span of $A^T$ equals the row span the row echelon form of $A^T$ and the 
+    that row span of $A^T$ equals the row span of the row echelon form of $A^T$ and the 
     nonzero rows of a matrix in row echelon form are linear independent. 
 
     The number of nonzero rows is exactly the number of pivots. 
@@ -360,3 +358,6 @@ form for $A^T$.
 - In general, a vector space need not be finite dimensional. The space 
 $\operatorname{Poly}(\mathbb{R},\mathbb{R})$ is not finite dimensional since there is 
 no finite spanning set. 
+
+    But it turns out that any vector space will have a basis. You have use 
+    [Zorn's Lemma](http://www.math.lsa.umich.edu/~kesmith/infinite.pdf). 
