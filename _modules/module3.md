@@ -43,3 +43,16 @@ Oct 7
   : 
 : [Pre-reading]({% link notes/vector_spaces/inner_products.md %})
 : [Worksheet]({% link worksheets/14.md %})
+
+Oct 12
+: Gram Schmidt orthogonalization
+  : 
+: [Pre-reading]({% link notes/vector_spaces/gram_schmidt.md %})
+: [Worksheet]({% link worksheets/15.md %})
+: [**HW 7 due**]({% link homework/07.md %}){: .label .label-red }
+
+Oct 14
+: QR decompositions
+  : 
+: [Pre-reading]({% link notes/vector_spaces/qr.md %})
+: [Worksheet]({% link worksheets/16.md %})
