@@ -257,6 +257,17 @@ $S$ only got bigger so $|S| > d$ remains true.
 Now we can apply the Theorem to conclude $|S| = d$ and we have a contradiction. 
 {% include endproof.html %}
 
+**Lemma**. Let $\dim V = d$. Any collection $d$ linearly independent vectors is a
+basis. Any collection $d$ spanning vectors is a basis. 
+
+{% include beginproof.html %}
+If $v_1,\ldots,v_d$ is linearly independent, then we can add in vectors to the set 
+to complete it to a basis. But then $\dim V > d$ which is a contradiction.
+
+Similarly, if $v_1, \ldots, v_d$ spans $V$, we can throw out vectors from the set 
+to get a basis. But then $\dim V < d$ which is also a contradiction. 
+{% include endproof.html %}
+
 **Proposition**. Let $U \subseteq V$ be a subspace of a vector space. 
 Then, 
 $$
