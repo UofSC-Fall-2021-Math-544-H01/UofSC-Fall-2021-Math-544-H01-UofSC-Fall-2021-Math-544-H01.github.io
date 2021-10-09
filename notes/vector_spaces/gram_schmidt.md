@@ -6,7 +6,7 @@ has_children: false
 has_toc: false
 parent: Vector spaces
 grand_parent: Notes
-work_in_progress: true
+work_in_progress: false
 ---
 
 {% if page.work_in_progress %}
@@ -58,17 +58,26 @@ $$
 $$
 from the standard inner product on $\mathbb{R}^m$.
 
+**Definition**. If we have a positive definite inner product $\langle -,- \rangle$ on 
+a vector space $v$, then we say the _length_ (or _norm_) of a vector $v$ is 
+$$
+    ||v|| := \sqrt{\langle v,v \rangle}
+$$  
+A vector is of _unit length_ (or is _norm one_) if $\|\|v\|\| = 1$. 
+
+Note that $v = 0$ if and only if its norm is $\|\|v\|\| = 0$. 
+
 ### The Gram-Schmidt Algorithm 
 
 The inputs to Gram-Schmidt are a vector space $V$ with a positive definite inner product 
 $\langle -, - \rangle$ and a basis for $V$. The output is an 
 orthonormal basis $w_1,\ldots,w_d$. 
 
-1. Establish an ordering for your basis $v_1,\ldots,v_d$.
+1. Establish an ordering for your basis $v_1,\ldots,v_d$. Now recursively do 2 and 3.
 
 2. Define 
 $$
-    u_i := v_i - \sum_{j=1}^{i-1} \frac{\langle v_i, v_j \rangle}{\langle v_j, v_j \rangle} v_j 
+    u_i := v_i - \sum_{j=1}^{i-1} \langle v_j, w_j \rangle w_j 
 $$
 
 3. Set  
@@ -82,6 +91,146 @@ $$
 $$
 by definition. 
 
+**Lemma**. Suppose $u_j \neq 0$ for all $1 \leq j \leq i$. Then $w_1,\ldots,w_i$ is 
+an orthonormal set. 
+
+{% include beginproof.html %}
+Note that from our assumption 
+$$
+    w_j := \frac{1}{\sqrt{\langle u_j,u_j \rangle}}u_j 
+$$
+is well-defined for each $1 \leq j \leq i$. 
+
+We have 
+$$
+    \langle w_j, w_j \rangle = \left \langle \frac{1}{\sqrt{\langle u_j, u_j \rangle}} u_j, 
+    \frac{1}{\sqrt{\langle u_j, u_j \rangle}} u_j \right \rangle 
+    = \frac{\langle u_j, u_j \rangle}{\langle u_j, u_j \rangle} = 1
+$$
+
+Next we prove that $w_1,\ldots,w_j$ is an orthogonal set for each $1 \leq j \leq i$. 
+We work using induction. For the base case of $j = 1$ there is nothing to prove. 
+
+Assume that $w_1,\ldots,w_{j-1}$ is an orthogonal set. We want to 
+show that $w_1,\ldots,w_j$ is an orthogonal. From the induction hypothesis, 
+we know that $\langle w_r, w_s \rangle = 0$ for $1 \leq r,s \leq j-1$. We 
+need to check that $\langle w_r, w_j \rangle = 0$. 
+$$
+    \begin{aligned}
+        \langle w_r , w_j \rangle & = \langle u_j, u_j \rangle \langle w_r, v_j - 
+        \sum_{s =1}^{j-1} \langle v_j, w_s \rangle w_s \rangle \\ 
+        & = \langle u_j, u_j \rangle \left( \langle w_r, v_j \rangle - \sum_{s=1}^{j-1} 
+        \langle v_j, w_s \rangle \langle w_r, w_s \rangle \right)
+    \end{aligned}  
+$$
+Since $w_1,\ldots,w_{j-1}$ is an orthogonal set, $\langle w_r,w_s \rangle =0$ for 
+$r \neq s$ and this expression simplifies as 
+$$
+    = \langle u_j, u_j \rangle ( \langle w_r, v_j \rangle - \langle v_j, w_r \rangle 
+    \langle w_r, w_r \rangle ) = 0
+$$
+This is zero since $\langle -,- \rangle$ is symmetry and we already saw that 
+$\langle w_r, w_r \rangle = 1$.
+{% include endproof.html %}
+
+Next we have a simple criteria for an orthogonal set to be a basis: it just has 
+to have the dimension many vectors in it. 
+
+**Lemma**. Let $\langle -,- \rangle$ be a positive definite inner product on a vector space. 
+If $w_1,\ldots,w_i$ is a set of nonzero orthogonal vectors, then 
+it is a linearly independent. In particular, if $\dim V = d$, and $i = d$, 
+it is a basis.  
+
+{% include beginproof.html %}
+See [Worksheet 15](% link worksheet/15.md %)
+{% include endproof.html %}
+
+As corollary of the previous two results, we have the following.
+
+**Corollary**. If $u_i \neq 0$ for $1 \leq i \leq j$, then $w_1,\ldots,w_j$ is an 
+orthonormal basis for the $\operatorname{Span}(v_1,\ldots,v_j)$. 
+
+{% include beginproof.html %}
+We first check that each $w_i$ lies in the span of the $v_1,\ldots,v_i$ using 
+induction. In the base case, 
+$$
+    w_1 = \frac{1}{\sqrt{\langle v_1,v_1 \rangle}}v_1 \in \operatorname{Span}(v_1)
+$$
+
+Assume now that $w_1,\ldots,w_{i-1} \in \operatorname{Span}(v_1,\ldots,v_{i-1})$. 
+Since
+$$
+    w_i = \frac{1}{\sqrt{\langle u_i, u_i \rangle}}\left(v_i - 
+    \sum_{s=1}^{i-1} \langle v_i, w_s \rangle w_s \right)
+$$
+we have written $w_i$ as a linear combination of $w_1,\ldots,w_{i-1}$ and $v_i$. 
+Since we can write each $w_1,\ldots,w_{i-1}$ as a linear combination of 
+$v_1,\ldots,v_{i-1}$, we can substitute those in and simplify to get $w_i$ as 
+a linear combination of $v_1,\ldots,v_i$. 
+
+Since $v_1,\ldots,v_d$ is basis, it is linearly independent. Thus, the dimension 
+of the span of $v_1,\ldots,v_i$ is $i$. We also have $i$ orthogonal vectors 
+in $w_1,\ldots,w_i$. Each is nonzero since we assumed that $u_j \neq 0$ for all $j$. 
+Using the previous lemma, we see that $w_1,\ldots,w_i$ is a basis for 
+$\operatorname{Span}(v_1,\ldots,v_i)$. 
+{% include endproof.html %}
+
+We are left with checking that each $u_i \neq 0$ so Gram-Schmidt is well defined. 
+
+**Lemma**. Each $u_i \neq 0$ for $1 \leq i \leq d$. 
+
+{% include beginproof.html %}
+We work by induction again. For case of $i=1$, we have $v_1 \neq 0$ 
+since it is a member of a basis. And $u_1 = v_1$. 
+
+Assume that $u_j \neq 0$ for $j < i$. If $u_i = 0$, then we have 
+$$
+    v_i = \sum_{s=1}^{i-1} \langle v_i,w_s \rangle w_s
+$$
+In other words, $v_i$ is in the span of $w_1,\ldots,w_{i-1}$. But, we just saw 
+that 
+$$
+    \operatorname{Span}(w_1,\ldots,w_{i-1}) = \operatorname{Span}(v_1,\ldots,v_{i-1})
+$$
+This implies that 
+$$
+    v_i \in \operatorname{Span}(v_1,\ldots,v_{i-1})
+$$
+which is a contradiction to the linear independence of $v_1,\ldots,v_i$. Thus, $u_i \neq 0$. 
+{% include endproof.html %}
+
+**Example**. Let's go back to the example a basis which is not orthonormal
+$$
+    v_1,v_2,v_3 := \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}, \begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix}, \begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix}
+$$
+and let's apply Gram Schmidt. We have $w_1=v_1$ since the length of $v_1$ is already $1$. Next we have 
+$$
+    u_2 = \begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix} - \left\langle \begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix}, 
+    \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix} \right\rangle \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix} = 
+    \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix}
+$$
+Since $\|\|u_2\|\|=1$, we have $w_2 = u_2$. Finally, 
+$$
+    u_3 = \begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix} - \left\langle \begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix}, 
+    \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix} \right\rangle \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix} - 
+    \left\langle \begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix}, 
+    \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix} \right\rangle \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix} = 
+    \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}
+$$
+and $w_3 = u_3$. 
+
+So in this case we recover the standard basis. But that is not always the case. Suppose we reverse the ordering 
+of our basis and run Gram Schmidt again. Then we would a different orthonormal basis
+$$
+    \frac{1}{\sqrt{3}} \begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix}, 
+    \frac{\sqrt{3}}{\sqrt{2}} \begin{pmatrix} 1/3 \\ 1/3 \\ -2/3 \end{pmatrix},
+    \sqrt{2} \begin{pmatrix} 1/2 \\ -1/2 \\ 0 \end{pmatrix}
+$$
+
+In Sage, you can perform Gram Schmidt on the _rows_ of a matrix $A$ by calling `A.gram_schmidt()`. 
+
+
+<!-- 
 **Lemma**. Step 2 is well-defined. In other words, we are not dividing by anywhere. 
 
 {% include beginproof.html %}
@@ -243,32 +392,8 @@ $$
 $$
 
 
-**Lemma**. Let $\langle -,- \rangle$ be a positive definite inner product on a vector space. 
-If $w_1,\ldots,w_i$ is a set of nonzero orthogonal vectors, then 
-it is a linearly independent. In particular, if $\dim V = d$, and $i = d$, 
-it is a basis.  
 
-{% include beginproof.html %}
-Assume we have a relation 
-$$
-    0 = a_1 w_1 + \cdots + a_i w_i
-$$
-For each $1 \leq j \leq i$, we have 
-$$
-    0 = \langle 0, w_j \rangle = a_1 \langle w_1, w_j \rangle + \cdots + a_i \langle w_i, w_j \rangle 
-    = a_j \langle w_j, w_j \rangle 
-$$
-Since $\langle w_j, w_j \rangle \neq 0$, we see that $a_j = 0$. Thus, $w_1,\ldots,w_i$ are 
-linearly independent.
-
-If $\dim V = d$ and $i=d$, then since $w_1,\ldots,w_d$ spans, we 
-[know]({% link notes/vector_spaces/bases.md %}#consequences)
-it must be a basis. 
-{% include endproof.html %}
-
-
-
-
+ -->
 
 <!-- The following lemma is useful to help check when a candidate inner product is actually 
 an inner product. 
@@ -319,3 +444,20 @@ $$
 $$
 and let $
 {% include endproof.html %} -->
+
+
+<!-- Assume we have a relation 
+$$
+    0 = a_1 w_1 + \cdots + a_i w_i
+$$
+For each $1 \leq j \leq i$, we have 
+$$
+    0 = \langle 0, w_j \rangle = a_1 \langle w_1, w_j \rangle + \cdots + a_i \langle w_i, w_j \rangle 
+    = a_j \langle w_j, w_j \rangle 
+$$
+Since $\langle w_j, w_j \rangle \neq 0$, we see that $a_j = 0$. Thus, $w_1,\ldots,w_i$ are 
+linearly independent.
+
+If $\dim V = d$ and $i=d$, then since $w_1,\ldots,w_d$ spans, we 
+[know]({% link notes/vector_spaces/bases.md %}#consequences)
+it must be a basis.  -->
