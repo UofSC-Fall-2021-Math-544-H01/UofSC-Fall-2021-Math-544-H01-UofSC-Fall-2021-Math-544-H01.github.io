@@ -77,7 +77,7 @@ orthonormal basis $w_1,\ldots,w_d$.
 
 2. Define 
 $$
-    u_i := v_i - \sum_{j=1}^{i-1} \langle v_j, w_j \rangle w_j 
+    u_i := v_i - \sum_{j=1}^{i-1} \langle v_i, w_j \rangle w_j 
 $$
 
 3. Set  
