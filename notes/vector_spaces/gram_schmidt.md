@@ -227,7 +227,9 @@ $$
     \sqrt{2} \begin{pmatrix} 1/2 \\ -1/2 \\ 0 \end{pmatrix}
 $$
 
-In Sage, you can perform Gram Schmidt on the _rows_ of a matrix $A$ by calling `A.gram_schmidt()`. 
+In Sage, you can perform Gram Schmidt on the _rows_ of a matrix $A$ by calling `A.gram_schmidt()`. But you 
+should be a little surprised. We will talk more about the output here 
+[next]({% link notes/vector_spaces/qr.md %}). 
 
 
 <!-- 
