@@ -122,7 +122,7 @@ $$
 
 As mentioned earlier, in Sage there is a method `A.gram_schmidt()` for a matrix $A$. It returns a 
 decomposition very close to the QR one. 
-- First it does a factorization on the matrix $A$ whose _rows_ are the vectors in the basis. 
+- First it consumes a matrix $A$ whose _rows_ are the vectors in the basis. 
 - It returns 
 $$
     A = \tilde{Q} L 
