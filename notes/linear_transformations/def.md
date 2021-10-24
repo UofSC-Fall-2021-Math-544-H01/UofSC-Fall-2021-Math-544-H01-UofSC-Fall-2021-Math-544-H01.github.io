@@ -37,6 +37,15 @@ as we would for matrix multiplication but in a broader context.
 
 ### Examples 
 
+- For any vector space $V$, the identity map 
+$$
+    \begin{aligned}
+        \operatorname{Id}_V : V & \to V \\
+        v & \mapsto v
+    \end{aligned}
+$$
+is a linear transformation. 
+
 - Multiplication by a matrix is a linear transformation. We know from 
 matrix algebra that 
 $$

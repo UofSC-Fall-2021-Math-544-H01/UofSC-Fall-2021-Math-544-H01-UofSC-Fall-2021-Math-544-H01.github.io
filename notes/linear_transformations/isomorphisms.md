@@ -6,7 +6,7 @@ has_children: false
 has_toc: false
 parent: Linear Transformations
 grand_parent: Notes
-work_in_progress: true
+work_in_progress: false
 ---
 
 {% if page.work_in_progress %}
@@ -24,6 +24,14 @@ $$
 and 
 $$
     T(T^{-1}(w)) = w ~\text{for all}~ w \in W
+$$
+In other words, 
+$$
+    T^{-1} \circ T = \operatorname{Id}_V 
+$$
+and
+$$
+    T \circ T^{-1} = \operatorname{Id}_W
 $$
 
 **Proposition**. A linear transformation $T: V \to W$ is an 
@@ -52,7 +60,11 @@ Thus, $S$ is a linear transformation and $T$ is an isomorphism.
 {% include endproof.html %}
 
 Two vector spaces that are related by an isomorphism are called 
-_isomorphic_. Isomorphic vector spaces are not the same, ie equal. 
+_isomorphic_ and we write 
+$$
+    V \cong W. 
+$$
+Isomorphic vector spaces are not the same, ie equal. 
 But, since they differ by a linear relabeling, they are the same 
 by any measure of linear algebra. 
 
@@ -145,3 +157,36 @@ $$
 $$
 So $w$ is in the span of the $T(v_i)$. 
 {% include endproof.html %}
+
+The converse statement also holds. 
+
+**Proposition**. If two $k$-vector spaces have the same dimension, then they are 
+isomorphic. 
+
+{% include beginproof.html %}
+Let $V$ and $W$ be $k$-vector spaces with $\dim V = \dim W$. Pick bases 
+$v_1,\ldots,v_d$ and $w_1,\ldots,w_d$ for $V$ and for $W$. Then we have seen that 
+there exists unique linear transformation $T: V \to W$ with 
+$$
+    T(v_i) = w_i
+$$
+Similarly, there exists a unique line $S:W \to V$ with 
+$$
+    S(w_i) = v_i 
+$$
+Note that for each $i$
+$$
+    ST(v_i) = v_i 
+$$
+Thus, since they both act the same on a basis, we have $ST = \operatorname{Id}_V$. 
+Similarly we have $$TS = \operatorname{Id}_W$. So we see that $T$ is an 
+isomorphism. 
+{% include endproof.html %}
+
+Combining the two statements, we have the following. 
+
+**Theorem**. Two vector spaces are isomorphic if and only if they have 
+the same dimension. 
+
+This theorem says that the dimension of $V$ captures all the information 
+about it. 
