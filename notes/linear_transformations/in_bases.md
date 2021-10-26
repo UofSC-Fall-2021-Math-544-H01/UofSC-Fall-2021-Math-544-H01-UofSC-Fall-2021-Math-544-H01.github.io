@@ -1,6 +1,6 @@
 ---
 layout: page
-title: In Bases
+title: Linear Transformations in Bases
 nav_order: 3
 has_children: false
 has_toc: false
@@ -197,65 +197,156 @@ for $\mathbb{R}^2$.
 
 To determine the matrix representation in our a new bases, we first compute
 $$
-    Av_1 = \begin{pmatrix} 1 \\ 4 \end{pmatrix} \\
-    Av_2 = \begin{pmatrix} 3 \\ 7 \end{pmatrix} \\
+    Av_1 = \begin{pmatrix} 1 \\ 4 \end{pmatrix}, \
+    Av_2 = \begin{pmatrix} 3 \\ 7 \end{pmatrix}, \
     Av_3 = \begin{pmatrix} 6 \\ 15 \end{pmatrix} 
 $$
 
-Now, 
-
-We can compute this using our 
-[change of basis matrices]({% link notes/vector_spaces/bases.md %}). 
-We know that what $T$ looks like in the standard bases $e_1,e_2,e_3$ 
-and $e_1,e_2$. If we compute matrix $C$ that changes bases from 
-$e_1,e_2,e_3$ to $v_1,v_2,v_3$ and the matrix $D$ that changes 
-bases from $w_1,w_2$ to $e_1,e_2$, then the product $DAC$ will be 
-the matrix representation for $A$ for $v_1,v_2,v_3$ and $w_1,w_2$. 
-
-The change of basis matrix from $e_1,e_2,e_3$ to $v_1,v_2,v_3$ is 
-simply
-$$
-    \begin{pmatrix} 
-        1 & 1 & 1 \\
-        0 & 1 & 1 \\
-        0 & 0 & 1
-    \end{pmatrix}
-$$
-The matrix that changes from $w_1,w_2$ to $e_1,e_2$ is the _inverse_ to 
+Now, we need to express each $Av_i$ as linear combination of the $v_i$. 
+Doing this is equivalent to solving the linear systems 
 $$
     \begin{pmatrix} 
         1 & 1 \\
         -1 & 1 
     \end{pmatrix}
+    \mathbf{c}_i = Av_i
 $$
-which is 
+Solving this gives 
 $$
-    \frac{1}{2} \begin{pmatrix} 
-        1 & -1 \\
-        1 & 1 
+    \mathbf{c}_1 = \frac{1}{2} \begin{pmatrix} 
+        -3  \\
+        5 
+    \end{pmatrix}, \
+    \mathbf{c}_2 = \frac{1}{2} \begin{pmatrix} 
+        -6  \\
+        12
+    \end{pmatrix}, \ 
+    \mathbf{c}_3 = \frac{1}{2} \begin{pmatrix}
+        -9  \\
+        21
     \end{pmatrix}
 $$
-
-Thus 
+So our matrix representation is 
 $$
-    \frac{1}{2} \begin{pmatrix} 
-        1 & -1 \\
-        1 & 1 
-    \end{pmatrix}
-    \begin{pmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \end{pmatrix}
-    \begin{pmatrix} 
-        1 & 1 & 1 \\
-        0 & 1 & 1 \\
-        0 & 0 & 1
-    \end{pmatrix} =
-    \frac{1}{2} \begin{pmatrix} 
+\frac{1}{2} \begin{pmatrix} 
         -3 & -6 & -9 \\
         5 & 12 & 21
-    \end{pmatrix} 
+\end{pmatrix} 
 $$
-is the matrix representation of $T$ in the new bases. 
 
-Some words for caution:
+This is the straightforward way to proceed for computing the 
+matrix representation of a linear transformation 
+$$
+    \begin{aligned}
+        T: \mathbb{R}^n & \to \mathbb{R}^m \\
+        \mathbf{v} & \mapsto A\mathbf{v}
+    \end{aligned}
+$$
+but there is a more efficient way. We had to solve three linear 
+systems with the same coefficient matrix but different inhomogeneous 
+terms. It is better to compute the inverse of
+$$
+    D = \begin{pmatrix} 
+        1 & 1 \\
+        -1 & 1 
+    \end{pmatrix}
+$$
+Then
+$$
+    \mathbf{c}_i = D^{-1} A v_i 
+$$
+
+We can interpret this in terms 
+[change of basis matrices]({% link notes/vector_spaces/bases.md %}). 
+
+The matrix $D$ represents writing the basis 
+$$
+    \begin{pmatrix} 1 \\ -1 \end{pmatrix},
+    \begin{pmatrix} 1 \\ 1  \end{pmatrix}
+$$
+in terms of the standard basis 
+$$
+    \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \ 
+    \begin{pmatrix} 0 \\ 1 \end{pmatrix}
+$$
+
+Similarly, we have the matrix $C$ which represents writing the 
+basis 
+$$
+    \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}, 
+    \begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix},
+    \begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix}
+$$
+in terms of the standard basis
+$$
+    \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}, 
+    \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix},
+    \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}
+$$
+Note that 
+$$
+    Av_i = (AC)_i 
+$$
+Thus, the matrix representation of $A$ in the new bases is given 
+by the product
+$$
+    D^{-1} A C 
+$$
+
+More generally, we have the following way to related two matrix 
+representations of $T$. 
+
+**Lemma**. Let $T: V \to W$ be a linear transformation between 
+finite dimensional vector spaces. Assume we have bases $v_1,\ldots, v_n$ 
+and $v_1^\prime, \ldots, v_n^\prime$ of $V$ and bases 
+$w_1,\ldots,w_m$ and $w_1^\prime,\ldots,w_m^\prime$. Assume $A$ is the 
+matrix representation of $T$ in the bases $v_1,\ldots, v_n$ and 
+$w_1,\ldots,w_m$. Then the matrix representation of $T$ in the bases 
+$v_1^\prime, \ldots, v_n^\prime$ for $V$ and $w_1^\prime,\ldots,w_m^\prime$ 
+of $W$ is given by the product 
+$$
+    D^{-1} A C 
+$$
+where $C$ is the change of basis matrix from $v_1,\ldots, v_n$ to 
+$v_1^\prime, \ldots, v_n^\prime$ and $D$ is the change of basis 
+matrix from $w_1,\ldots,w_m$ to $w_1^\prime,\ldots,w_m^\prime$. 
+
+{% include beginproof.html %}
+To find the matrix representation of $T$ for $v_1^\prime, \ldots, v_n^\prime$ 
+and $w_1^\prime,\ldots,w_m^\prime$, we write $Tv_i^\prime$ as linear combination 
+of the $w_1^\prime,\ldots,w_m^\prime$ for each $i$ and record the 
+coefficients in a matrix. 
+
+We know that if we do this with $v_1, \ldots, v_n$ and 
+$w_1,\ldots,w_m$, then we get $A$ as our matrix. 
+
+We have 
+$$
+    v_j^\prime = \sum_{i=1}^n C_{ij} v_i 
+$$  
+and 
+$$
+    w_j = \sum_{i=1}^m D_{ij}^{-1} w_i^\prime 
+$$
+If we apply $T$ to $v_j^\prime$, we have 
+$$
+    T(v_j^\prime) = T\left( \sum_{i=1}^n C_{ij} v_i \right) = \sum_{i=1}^n C_{ij} T(v_i) 
+$$
+Then, using $A$ we have 
+$$
+    \begin{aligned}
+        T(v_j^\prime) & = \sum_{i=1}^n C_{ij} \left( \sum_{l=1}^m A_{li}w_l \right) \\
+        & = \sum_{i=1}^n C_{ij} \left( \sum_{l=1}^m A_{li} \left(\sum_{s=1}^m D_{sl}^{-1} w_s^\prime \right) \right)
+    \end{aligned}
+$$
+So the coefficient in the expansion of $T(v_j^\prime)$ for $w_s^\prime$ is 
+$$
+    \sum_{l=1}^m \sum_{i=1}^n D_{sl}^{-1}A_{li}C_{ij} = (D^{-1}AC)_{sj}
+$$
+which proves the claim.
+{% include endproof.html %}
+
+Some things to keep in mind:
 - One linear transformation can have many matrix representations! It 
 all depends on the bases. 
 - One matrix can give many different linear transformations! It all 
