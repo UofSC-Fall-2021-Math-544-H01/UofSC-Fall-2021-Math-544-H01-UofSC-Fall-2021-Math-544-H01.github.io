@@ -195,6 +195,15 @@ $$
 $$
 for $\mathbb{R}^2$. 
 
+To determine the matrix representation in our a new bases, we first compute
+$$
+    Av_1 = \begin{pmatrix} 1 \\ 4 \end{pmatrix} \\
+    Av_2 = \begin{pmatrix} 3 \\ 7 \end{pmatrix} \\
+    Av_3 = \begin{pmatrix} 6 \\ 15 \end{pmatrix} 
+$$
+
+Now, 
+
 We can compute this using our 
 [change of basis matrices]({% link notes/vector_spaces/bases.md %}). 
 We know that what $T$ looks like in the standard bases $e_1,e_2,e_3$ 
