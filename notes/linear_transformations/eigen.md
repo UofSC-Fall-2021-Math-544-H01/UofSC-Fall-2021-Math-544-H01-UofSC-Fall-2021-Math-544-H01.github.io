@@ -18,7 +18,7 @@ built from the kernel and range. Here we introduce a different
 but very important one. 
 
 **Definition**. Let $T: V \to V$ be a linear transformation. A 
-vector $v \in V$ is called an _eigenvector_ for $T$ if 
+vector $v \in V$ is called an _eigenvector_ for $T$ if $v \neq 0$
 $$
     T(v) = \lambda v
 $$
@@ -124,6 +124,44 @@ is a new basis for $V$. The change of basis matrix
 from $v_1, \ldots, v_d$ to $w_1,\ldots,w_d$ is the matrix $S$ 
 and $T$ in the new basis is $S^{-1}AS$ which is diagonal. 
 Thus $w_1,\ldots,w_d$ is a basis for eigenvectors for $V$. 
+{% include endproof.html %}
+
+If we can find eigenvectors with different eigenvalues, we 
+get linear independence automatically. 
+
+**Lemma**. Let $v_1,\ldots,v_s$ be eigenvectors for 
+$T: V \to V$ with $\lambda_i \neq \lambda_j$ if $i \neq j$. 
+Then, $v_1,\ldots,v_s$ is linearly independent. 
+
+{% include beginproof.html %}
+If $v_1,\ldots,v_s$ are linearly dependent, we can write
+at least on as linear combination of the other vectors. 
+Up to relabeling we have, 
+$$
+    v_{t+1} = \sum_{j=1}^t c_i v_i
+$$
+with $v_1,\ldots,v_t$ linearly independent. 
+Now applying $T$ we get 
+$$
+    \lambda_{t+1} v_{t+1} = \sum_{j=1}^t \lambda_i c_i v_i 
+$$
+
+If $\lambda_{t+1} = 0$, then we have relation so at least one 
+$\lambda_i = 0$ since $v_1,\ldots,v_t$ is linearly independent 
+and not all $c_i = 0$. This is a contradiction. 
+
+If $\lambda_{t+1} \neq 0$, then we can divide by $\lambda_{t+1}$ 
+to get 
+$$
+    v_{t+1} = \sum_{j=1}^t \frac{\lambda_i}{\lambda_{t+1}} c_i v_i 
+$$
+which gives another way to write $v_{t+1}$ as linear combination of 
+$v_1,\ldots,v_t$. So 
+$$
+    c_i = \frac{\lambda_i}{\lambda_{t+1}} c_i 
+$$
+for all $i$. If $\lambda_i \neq \lambda_{t+1}$, then $c_i = 0$ 
+which contradicts $v_{t+1} \neq 0$.
 {% include endproof.html %}
 
 Our next goal will be to understand the eigenspaces and the 
