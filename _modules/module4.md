@@ -27,4 +27,17 @@ Nov 2
   : 
 : [Pre-reading]({% link notes/linear_transformations/kernels_ranges.md %})
 : [Worksheet]({% link worksheets/20.md %})
-: [**HW 9 due**]({% link homework/10.md %}){: .label .label-red }
+: [**HW 10 due**]({% link homework/10.md %}){: .label .label-red }
+
+Nov 4
+: Eigenvector and diagonalizability
+  : 
+: [Pre-reading]({% link notes/linear_transformations/eigen.md %})
+: [Worksheet]({% link worksheets/21.md %})
+
+Nov 9
+: Determinants
+  : 
+: [Pre-reading]({% link notes/linear_transformations/determinants.md %})
+: [Worksheet]({% link worksheets/22.md %})
+: [**HW 10 due**]({% link homework/10.md %}){: .label .label-red }

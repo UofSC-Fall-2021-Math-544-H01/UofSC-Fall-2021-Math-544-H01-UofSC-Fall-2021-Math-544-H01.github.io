@@ -1,6 +1,6 @@
 ---
 title: Vector Spaces
-ended: false
+ended: true
 ---
 
 Sept 21
