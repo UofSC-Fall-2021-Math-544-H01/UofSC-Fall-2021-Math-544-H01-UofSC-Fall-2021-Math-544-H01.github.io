@@ -6,7 +6,7 @@ has_children: false
 has_toc: false
 parent: Linear Transformations
 grand_parent: Notes
-work_in_progress: true
+work_in_progress: false
 ---
 
 {% if page.work_in_progress %}
@@ -19,6 +19,7 @@ but very important one.
 
 **Definition**. Let $T: V \to V$ be a linear transformation. A 
 vector $v \in V$ is called an _eigenvector_ for $T$ if $v \neq 0$
+and 
 $$
     T(v) = \lambda v
 $$
@@ -43,7 +44,7 @@ $$
 So $c_1v_1 + c_2v_2 \in E_\lambda$. 
 {% include endproof.html %}
 
-Eigenvectors are important because they allow use to under 
+Eigenvectors are important because they allow use to understand  
 the structure of the linear transformation. 
 
 **Example**. Let 
@@ -88,11 +89,11 @@ one to use in the domain and one for the codomain, then
 we can find diagonal matrix representation for any 
 $T : V \to V$. However, this will not guarantee that 
 we have found any eigenvectors. We need the matrix 
-representation of $T$ to be diagonal form _the same_ 
+representation of $T$ to be diagonal for _the same_ 
 basis on each side. 
 
 After choosing a basis, we get a matrix representation 
-$A$ for $T$. Change to a different basis, the same in 
+$A$ for $T$. Changing to a different basis, the same in 
 the source and target, replaces $A$ with 
 $$
     S^{-1}AS
@@ -135,7 +136,7 @@ Then, $v_1,\ldots,v_s$ is linearly independent.
 
 {% include beginproof.html %}
 If $v_1,\ldots,v_s$ are linearly dependent, we can write
-at least on as linear combination of the other vectors. 
+at least one as a linear combination of the other vectors. 
 Up to relabeling we have, 
 $$
     v_{t+1} = \sum_{j=1}^t c_i v_i
