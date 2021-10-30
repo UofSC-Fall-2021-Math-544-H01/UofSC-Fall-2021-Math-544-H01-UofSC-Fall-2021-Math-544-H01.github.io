@@ -40,4 +40,4 @@ Nov 9
   : 
 : [Pre-reading]({% link notes/linear_transformations/determinants.md %})
 : [Worksheet]({% link worksheets/22.md %})
-: [**HW 10 due**]({% link homework/10.md %}){: .label .label-red }
+: [**HW 11 due**]({% link homework/10.md %}){: .label .label-red }
