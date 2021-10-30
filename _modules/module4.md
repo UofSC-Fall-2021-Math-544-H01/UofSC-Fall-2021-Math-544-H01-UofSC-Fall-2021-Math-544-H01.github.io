@@ -30,7 +30,7 @@ Nov 2
 : [**HW 10 due**]({% link homework/10.md %}){: .label .label-red }
 
 Nov 4
-: Eigenvector and diagonalizability
+: Eigenvectors and diagonalizability
   : 
 : [Pre-reading]({% link notes/linear_transformations/eigen.md %})
 : [Worksheet]({% link worksheets/21.md %})
