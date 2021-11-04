@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Eigenvalues and Eigenvectors
+title: Eigenvectors
 nav_order: 6
 has_children: false
 has_toc: false
@@ -12,6 +12,8 @@ work_in_progress: false
 {% if page.work_in_progress %}
     WORK IN PROGRESS
 {% endif %}
+
+## Eigenvectors and Eigenvalues
 
 We have seen a few notions we can attach to a linear tranformation 
 built from the kernel and range. Here we introduce a different 
