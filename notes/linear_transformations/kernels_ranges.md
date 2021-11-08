@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Kernel, Range, Nullity, Rank
+title: Null Spaces and Ranges
 nav_order: 5
 has_children: false
 has_toc: false
@@ -13,7 +13,7 @@ work_in_progress: false
     WORK IN PROGRESS
 {% endif %}
 
-## Kernels and ranges of linear transformation 
+## Null spaces and ranges of linear transformation 
 
 The most important concepts we encountered for matrices were 
 secretly built from linear transformations. 
@@ -168,5 +168,5 @@ There is another common adjective for isomorphisms.
 **Definition**. A linear transformation $T: V \to W$ is _nonsingular_ if 
 $T$ is an isomorphism. Otherwise, it is called _singular_. 
 
-Computing the kernel and range of a linear transformation offers a means 
+Computing the null space and range of a linear transformation offers a means 
 to check non-singularity. 

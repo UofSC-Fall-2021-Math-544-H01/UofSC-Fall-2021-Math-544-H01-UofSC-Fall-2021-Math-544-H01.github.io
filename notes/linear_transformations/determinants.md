@@ -330,5 +330,26 @@ Then, $\det$ is a determinant.
 
 Note that any determinant must satisfy these conditions. 
 
-We won't give a proof of this fact. If you are interested, 
-[ask me](https://media.giphy.com/media/PHjiEBYrNPK6Y/giphy.gif). 
+We can use this result to establish a familiar formula for determinants 
+and transposes. 
+
+**Proposition**. Assume $\det$ is a determinant. Then, 
+$$
+    \det A = \det A^T
+$$
+
+{% include beginproof.html %}
+Note that the function
+$$
+    A \mapsto \det A^T
+$$
+satisfies all the conditions of the previous theorem. Indeed, 
+$$
+    \det (AB)^T = \det (B^T A^T) = \det(B^T) \det(A^T) = 
+    \det(A^T) \det(B^T) 
+$$
+and $(cI)^T = cI$. Thus, by uniqueness, we must have 
+$$
+    \det A = \det A^T. 
+$$
+{% include endproof.html %}
