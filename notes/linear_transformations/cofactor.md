@@ -172,6 +172,10 @@ $$
 $$
     \operatorname{det}^\prime(P(i,j) A) = - \operatorname{det}^\prime A
 $$
+- 
+$$
+    \operatorname{det}^\prime(I_n) = 1
+$$
 
 Then, $\det^\prime$ is a determinant. 
 

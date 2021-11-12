@@ -273,6 +273,8 @@ Then,
 $$
     \dim U \leq \dim V
 $$
+Moreover, if $\dim U = \dim V$ are both finite, then $U = V$. 
+
 In particular, any subspace of a finite-dimensional vector space is 
 also finite-dimensional.
 
@@ -293,6 +295,10 @@ $$
     \operatorname{Span}(u_1,\ldots,u_e) = U
 $$
 and the dimension of $U$ is $e$.
+
+If $\dim U = \dim V$ and $U \neq V$, then there is some $v \neq 0$ with $v \not U$. 
+For a basis $u_1,\ldots,u_e$, we have $u_1,\ldots,u_e,v$ is linearly independent. 
+Thus, $\dim V \geq \dim U + 1$ which is a contradiction. 
 {% include endproof.html %}
 
 ### Examples
