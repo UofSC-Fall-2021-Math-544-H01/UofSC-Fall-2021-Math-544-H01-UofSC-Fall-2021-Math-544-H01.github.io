@@ -140,7 +140,7 @@ $$
 
 **Proposition**. For any $n \times n$ matrix $A$, $\chi_A(x)$ is a 
 polynomial of degree $n$ with constant coefficient equal to $\det A$ 
-and whose $x^n$ coefficient in $(-1)^n$.  
+and whose $x^n$ coefficient is $(-1)^n$.  
 
 {% include beginproof.html %}
 We first prove the more general claim. 
@@ -157,7 +157,7 @@ We prove this claim using induction on $n$. The case of $n=1$ is clear.
 Assume that the statement is true for $n \times n$ matrices and let 
 $B$ be a $(n+1) \times (n+1)$ satisifying the condition. 
 If no column of $B$ has a $c-x$ then we are done since we have a constant. 
-Otherwise, pick a column $\mathbf{C}_l(A)$ with $c-x$ as an entry 
+Otherwise, pick a column $\mathbf{C}\_l(A)$ with $c-x$ as an entry 
 and using the cofactor expansion. 
 $$	
 	\det B = \sum_{i=1}^{n+1} (-1)^{i-1} B_{iL} \det M_{iL}
@@ -165,7 +165,7 @@ $$
 Each $M_{i1}$ is $n \times n$ matrix which has at most $j-1$ columns 
 containing a $c-x$. Applying the induction hypothesis, we know 
 that the degree of $\det M_{il}$ is at most $j-1$. Thus, 
-$$
+$
 	\operatorname{deg} (B_{il} \det M_{il}) \leq j  
 $$ 
 as is the sum giving $\det B$. 
@@ -177,10 +177,10 @@ $$
 $$
 If $j \neq 1$, then $M_{1j}$ still has $n-2$ columns with a $c-x$ 
 as we have removed the $(1,1)$ along with a $j$-column. Also 
-$(A-xI)_{1j} = A_{1j}$. So $(A-xI)_{1j} \det M_{1j}$ has 
+$(A-xI)\_{1j} = A_{1j}$. So $(A-xI)\_{1j} \det M_{1j}$ has 
 degree at most $n-2$ by the claim. 
 
-The term $(A-xI)_{11} \det M_{11}$ has degree at most $n$ by 
+The term $(A-xI)\_{11} \det M_{11}$ has degree at most $n$ by 
 the claim also. Furthermore, if the degree $n$ term is nonzero 
 it must come from this term since the others are degree $n-2$ 
 at most. Using induction, we see that the degree $n$ term comes 
