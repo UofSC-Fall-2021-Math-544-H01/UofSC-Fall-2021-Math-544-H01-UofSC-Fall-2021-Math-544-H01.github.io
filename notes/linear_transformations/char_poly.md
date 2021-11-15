@@ -6,7 +6,7 @@ has_children: false
 has_toc: false
 parent: Linear Transformations
 grand_parent: Notes
-work_in_progress: true
+work_in_progress: false 
 ---
 
 {% if page.work_in_progress %}
@@ -138,17 +138,66 @@ $$
     \end{aligned}
 $$
 
-In general, we have the following result. A polynomial $p(x)$ of degree $d$ is called 
-_monic_ if 
-$$
-    p(x) = x^d + a_{d-1}x^{d-1} + \cdots + a_0
-$$
-
-**Proposition**. For any $n \times n$ matrix $A$, $\chi_A(x)$ is a monic 
-polynomial of degree $n$ with constant coefficient equal to $\det A$. 
+**Proposition**. For any $n \times n$ matrix $A$, $\chi_A(x)$ is a 
+polynomial of degree $n$ with constant coefficient equal to $\det A$ 
+and whose $x^n$ coefficient in $(-1)^n$.  
 
 {% include beginproof.html %}
+We first prove the more general claim. 
 
+**Claim**. Suppose that we have a $n \times n$ matrix $B$ 
+satisfying the condition: for some $1 \leq j \leq n$ we 
+have exactly $j$ columns where one 
+entry is of the form $c-x$ with $c \in k$ and the others being 
+elements of the field $k$. Then, $\det B$ is a polynomial of 
+degree at most $j$. 
+
+We prove this claim using induction on $n$. The case of $n=1$ is clear. 
+
+Assume that the statement is true for $n \times n$ matrices and let 
+$B$ be a $(n+1) \times (n+1)$ satisifying the condition. 
+If no column of $B$ has a $c-x$ then we are done since we have a constant. 
+Otherwise, pick a column $\mathbf{C}_l(A)$ with $c-x$ as an entry 
+and using the cofactor expansion. 
+$$	
+	\det B = \sum_{i=1}^{n+1} (-1)^{i-1} B_{iL} \det M_{iL}
+$$
+Each $M_{i1}$ is $n \times n$ matrix which has at most $j-1$ columns 
+containing a $c-x$. Applying the induction hypothesis, we know 
+that the degree of $\det M_{il}$ is at most $j-1$. Thus, 
+$$
+	\operatorname{deg} (B_{il} \det M_{il}) \leq j  
+$$ 
+as is the sum giving $\det B$. 
+
+Let's use this claim to prove the proposition. We expand $\chi_A(x)$ 
+using the first row
+$$
+	\chi_A(x) = \sum_{j=1}^n (A-xI)_{1j} \det M_{1j}(A-xI)
+$$
+If $j \neq 1$, then $M_{1j}$ still has $n-2$ columns with a $c-x$ 
+as we have removed the $(1,1)$ along with a $j$-column. Also 
+$(A-xI)_{1j} = A_{1j}$. So $(A-xI)_{1j} \det M_{1j}$ has 
+degree at most $n-2$ by the claim. 
+
+The term $(A-xI)_{11} \det M_{11}$ has degree at most $n$ by 
+the claim also. Furthermore, if the degree $n$ term is nonzero 
+it must come from this term since the others are degree $n-2$ 
+at most. Using induction, we see that the degree $n$ term comes 
+from 
+$$
+	(A-xI)_{11}(A-xI)_{22} \cdots (A-xI)_{nn}
+$$
+which expands to 
+$$
+	(-1)^nx^n + \cdots 
+$$
+
+Finally, for the constant term of a polynomial we just need 
+to evaluate it at $x=0$. We have 
+$$
+	\chi_A(0) = \det (A-0I) = \det A. 
+$$
 {% include endproof.html %}
 
 A scalar $a \in k$ is a _root_ of a polynomial $p(x)$ if 
