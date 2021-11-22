@@ -6,7 +6,7 @@ has_children: false
 has_toc: false
 parent: Linear Transformations
 grand_parent: Notes
-work_in_progress: true
+work_in_progress: false
 ---
 
 {% if page.work_in_progress %}
@@ -131,7 +131,9 @@ In other words, any polynomial with coefficients in $\mathbb{C}$
 has a root in $\mathbb{C}$. 
 
 {% include beginproof.html %}
-There are multiple interesting proofs of the Fundamental Theorem of 
+There are 
+[multiple interesting proofs](https://mathoverflow.net/questions/10535/ways-to-prove-the-fundamental-theorem-of-algebra)
+of the Fundamental Theorem of 
 Algebra, some algebraic, some analytic. 
 {% include endproof.html %}
 
@@ -182,9 +184,9 @@ $$
 The next lemma shows that honest complex eigenvalues come in pairs. 
 
 **Lemma**. Assume we have a real $n \times n$ matrix. If $\lambda$ is 
-a complex eigenvalue of $A$, then so is $\overline{\lambda}$. Morever, 
+a complex eigenvalue of $A$, then so is $\overline{\lambda}$. Moreover, 
 $$
-E_{\overline{\lambda}}(A) = \overline{E_{\lambda}(A))
+E_{\overline{\lambda}}(A) = \overline{E_{\lambda}(A)}
 $$
 
 {% include beginproof.html %}
@@ -202,7 +204,7 @@ eigenvalue $\overline{\lambda}$.
 
 This also shows that 
 $$
-\overline{E_{\lambda}(a)) \subseteq E_{\overline{\lambda}}(a)
+\overline{E_{\lambda}(A)} \subseteq E_{\overline{\lambda}}(A)
 $$
 But, we can apply complex conjugation here to get 
 $$
@@ -211,7 +213,7 @@ E_{\lambda}(A) = \overline{\overline{E_{\lambda}(A)}} \subseteq
 $$
 Applying this, but replacing $\overline{\lambda}$ with $\lambda$ gives 
 $$
-\overline{E_{\lambda}(a)) \superseteq E_{\overline{\lambda}}(a)
+\overline{E_{\lambda}(A)} \superseteq E_{\overline{\lambda}}(A)
 $$
 {% include endproof.html %}
 
@@ -253,7 +255,7 @@ $$
 $$
 Using the quadratic formula, we have roots 
 $$
-\frac{-2 \pm \sqrt{-4}{2} = -1 \pm \imath
+\frac{-2 \pm \sqrt{-4}}{2} = -1 \pm \imath
 $$
 Note that since we have two distinct eigenvalues we already know 
 we have a basis of $\mathbb{C}^2$ consisting of $A$-eigenvectors. 
