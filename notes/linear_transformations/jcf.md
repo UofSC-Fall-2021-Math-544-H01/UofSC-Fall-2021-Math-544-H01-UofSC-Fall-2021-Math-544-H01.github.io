@@ -6,7 +6,7 @@ has_children: false
 has_toc: false
 parent: Linear Transformations
 grand_parent: Notes
-work_in_progress: true
+work_in_progress: false
 ---
 
 {% if page.work_in_progress %}
@@ -98,7 +98,7 @@ v_2 \\ v_3 \\ \vdots \\ v_n \\ 0
 $$
 Thus, the eigenspace is 
 $$
-\left\lbrace \begin{pmatrix} x \\ 0 \\ \cdots \\ 0 \\ 0 \end{pmatrix} 
+\left\lbrace \begin{pmatrix} x \\ 0 \\ \vdots \\ 0 \\ 0 \end{pmatrix} 
 \mid x \in k \right\rbrace 
 $$
 which is one-dimensional. 
