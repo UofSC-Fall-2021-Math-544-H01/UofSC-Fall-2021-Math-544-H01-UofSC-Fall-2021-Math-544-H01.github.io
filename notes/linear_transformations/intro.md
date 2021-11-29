@@ -27,6 +27,4 @@ $$
 $$
 
 We will use there two properties as the specification for the notion of 
-a _linear transformation of vectors spaces_. We will see how to 
-recover matrices from linear transformations between finite dimensional 
-vector spaces by expressing them in bases. 
+a _linear transformation of vectors spaces_. 

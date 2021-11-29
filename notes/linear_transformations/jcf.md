@@ -75,7 +75,7 @@ eigenspace.
 {% include beginproof.html %}
 If 
 $$
-J_n(\lambda) = \lambda v 
+J_n(\lambda) v = \lambda v 
 $$
 then we have 
 $$
@@ -87,10 +87,10 @@ $$
 0 & 0 & 0 & \cdots & 0 
 \end{pmatrix}
 \begin{pmatrix} 
-x_1 \\ x_2 \\ \vdots \\ v_{n-1} \\ v_n 
+v_1 \\ v_2 \\ \vdots \\ v_{n-1} \\ v_n 
 \end{pmatrix} = 
 \begin{pmatrix}
-x_2 \\ x_3 \\ \vdots \\ x_n \\ 0
+v_2 \\ v_3 \\ \vdots \\ v_n \\ 0
 \end{pmatrix} = 
 \begin{pmatrix}
 0 \\ 0 \\ \vdots \\ 0 \\ 0 
@@ -98,8 +98,8 @@ x_2 \\ x_3 \\ \vdots \\ x_n \\ 0
 $$
 Thus, the eigenspace is 
 $$
-\left\lbrace \begin{pmatrix} x \\ 0 \\ \cdots \\ 0 \\ 0 \mid 
-x \in k \right\rbrace 
+\left\lbrace \begin{pmatrix} x \\ 0 \\ \cdots \\ 0 \\ 0 \end{pmatrix} 
+\mid x \in k \right\rbrace 
 $$
 which is one-dimensional. 
 {% include endproof.html %}

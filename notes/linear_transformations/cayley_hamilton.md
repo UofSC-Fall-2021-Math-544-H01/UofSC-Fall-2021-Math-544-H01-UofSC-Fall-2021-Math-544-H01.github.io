@@ -76,7 +76,7 @@ $$
 p(x) = x^d + a_{d-1} x^{d-1} + \cdots + a_0 
 $$
 
-**Definition**. The _minimal polynmomial_ of $A$ is the minimal degree 
+**Definition**. The _minimal polynomial_ of $A$ is the minimal degree 
 monic polynomial that $A$ satisfies. We denote as $m_A(x)$. 
 
 In both our examples, we have actually written down minimal polynomials. 
@@ -109,13 +109,13 @@ Let's see how these compare in some examples.
 **Example**. 
 - For the identity matrix $I_n$, we have 
 $$
-\chi_{I_n) = (1-x)^n 
+\chi_{I_n} = (1-x)^n 
 $$
 and 
 $$
 m_{I_n}(x) = x-1
 $$
-so clearly $m_{I_n} \mid \chi_{I_n)$ and they are pretty far from equal. 
+so clearly $m_{I_n} \mid \chi_{I_n}$ and they are pretty far from equal. 
 
 - Consider the matrix 
 $$
