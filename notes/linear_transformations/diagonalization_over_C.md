@@ -13,9 +13,9 @@ work_in_progress: false
     WORK IN PROGRESS
 {% endif %}
 
-## Roots over $\mathbb{C}$
+## Roots over $~\mathbb{C}$
 
-As you might have seen, for a quadratic polynoial $ax^2+bx+c$, 
+As you might have seen, for a quadratic polynomial $ax^2+bx+c$, 
 we have a formula for the roots 
 $$
 \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} 

@@ -61,7 +61,7 @@ Note that
 $$
  A^2 -2A + 2I_2 = 0 
 $$
-Thus $A$ satisfies $x^2 - 2z + 2$. You might notice that this is 
+Thus $A$ satisfies $x^2 - 2x + 2$. You might notice that this is 
 _also_ the characteristic polynomial of $A$. 
 
 **Theorem** (Cayley-Hamilton). A $n \times n$ matrix satisfies 
@@ -103,6 +103,19 @@ We also know how the roots of the two polynomials compare.
 
 **Theorem**. The roots of $m_A(x)$ and the roots $\chi_A(x)$ are equal 
 sets. 
+
+Over $\mathbb{C}$, due to the 
+[Fundamental Theorem of Algebra]({% link notes/linear_transformations/diagonalization_over_C.md %}) 
+we know that 
+$$
+    \chi_A(x) = \prod_{i=1}^s (x-\alpha_i)^{e_i}
+$$
+for scalars $\alpha_i \in \mathbb{C}$ and integers $e_i \geq 1$. 
+Then, the previous theorem says, 
+$$
+    m_A(x) = \prod_{i=1}^s (x-\alpha_i)^{d_i}
+$$
+where $1 \leq d_i \leq e_i$ for each $i$. 
 
 Let's see how these compare in some examples. 
 
