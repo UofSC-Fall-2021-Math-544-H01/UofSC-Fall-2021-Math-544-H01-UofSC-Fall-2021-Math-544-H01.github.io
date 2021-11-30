@@ -72,10 +72,11 @@ Nov 30
 : Cayley-Hamilton 
   : 
 : [Pre-reading]({% link notes/linear_transformations/cayley_hamilton.md %})
-: [Worksheet]({% link worksheets/27.md %})
+: [Optional Worksheet]({% link worksheets/27.md %})
 : [**HW 14 due**]({% link homework/14.md %}){: .label .label-red }
 
 Dec 2
 : Jordan Canonical Form
   : 
 : [Pre-reading]({% link notes/linear_transformations/jcf.md %})
+: [Optional Worksheet]({% link worksheets/28.md %})

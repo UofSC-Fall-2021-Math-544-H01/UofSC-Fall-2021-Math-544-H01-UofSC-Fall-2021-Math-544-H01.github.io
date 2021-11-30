@@ -15,7 +15,9 @@ dropped.
 for a Mungo Undergraduate Teaching Award. Much like the evaluations, 
 instructors are not told the nominator to avoid influence. 
 
-* There will be worksheets for next week's classes but no quizzes. 
+* ~~There will be worksheets for next week's classes but no quizzes~~. 
+Instead of worksheets, it was decided to run a teardown. We will 
+use the time to revise past assignments and work on the project. 
 
 * If you want to turn things in for revision, be sure to have it 
 in by the Exam Date - December 9 at 9:00 am (EST). Sooner is better 
