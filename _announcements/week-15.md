@@ -16,7 +16,9 @@ from your final project.
 in by the Exam Date - December 9 at 9:00 am (EST). Sooner is better 
 as I have to submit grades shortly afterwards. 
 
-* Also, projects are due by the Exam Date - December 9 at 9:00 am (EST).
+* Also, projects are due by the Exam Date - December 9 at 9:00 am (EST). 
+If you turn your project in advance and it gets returned, you can 
+revise it until the Exam Date. 
 
 * Course evaluations are now open for this course. If you want me 
 to teach more Honors courses, including possibly _your_ future class, 
