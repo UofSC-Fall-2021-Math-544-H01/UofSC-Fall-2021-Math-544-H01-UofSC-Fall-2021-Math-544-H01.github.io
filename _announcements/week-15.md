@@ -1,8 +1,22 @@
 ---
-title: Week 15 Announcement
-week: 15
-date: 2021-11-29
+title: Week 16 Announcement
+week: 16
+date: 2021-12-06
 ---
+
+* I've added calculated totals, for ease of reference, to the 
+gradebook in Teams for your homework, quiz, and presentation score 
+accurate as of 3:00 pm 12/6. 
+Each is normalized to be out of 100. 
+[Remember]({% link about.md %}#evaluation-and-grading-scale) 
+your final grade is computed as 1/4 from each of these and 1/4 
+from your final project. 
+
+* If you want to turn things in for revision, be sure to have it 
+in by the Exam Date - December 9 at 9:00 am (EST). Sooner is better 
+as I have to submit grades shortly afterwards. 
+
+* Also, projects are due by the Exam Date - December 9 at 9:00 am (EST).
 
 * Course evaluations are now open for this course. If you want me 
 to teach more Honors courses, including possibly _your_ future class, 
@@ -13,14 +27,5 @@ dropped.
 * If you especially enjoyed the course, consider 
 [nominating me](https://sc.edu/about/offices_and_divisions/provost/honorsandawards/internal/nominations.php) 
 for a Mungo Undergraduate Teaching Award. Much like the evaluations, 
-instructors are not told the nominator to avoid influence. 
-
-* ~~There will be worksheets for next week's classes but no quizzes~~. 
-Instead of worksheets, it was decided to run a teardown. We will 
+instructors are not told the nominator to avoid influence.
 use the time to revise past assignments and work on the project. 
-
-* If you want to turn things in for revision, be sure to have it 
-in by the Exam Date - December 9 at 9:00 am (EST). Sooner is better 
-as I have to submit grades shortly afterwards. 
-
-* Also, projects are due by the Exam Date - December 9 at 9:00 am (EST).
