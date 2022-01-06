@@ -25,9 +25,3 @@ to teach more Honors courses, including possibly _your_ future class,
 please be sure to communicate this in your evaluation. If we get to 
 75% class participation, everyone's lowest homework score will be 
 dropped.
-
-* If you especially enjoyed the course, consider 
-[nominating me](https://sc.edu/about/offices_and_divisions/provost/honorsandawards/internal/nominations.php) 
-for a Mungo Undergraduate Teaching Award. Much like the evaluations, 
-instructors are not told the nominator to avoid influence.
-use the time to revise past assignments and work on the project. 
